@@ -27,7 +27,7 @@ const achievements = [
 export function Achievements() {
   return (
     <section className="py-36 border-t border-white/5">
-      <div className="max-w-4xl mx-auto px-6 lg:px-10">
+      <div className="max-w-5xl mx-auto px-6 lg:px-10">
         <div className="mb-16">
           <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
             Recognition
@@ -52,7 +52,7 @@ export function Achievements() {
                   <a.icon className="w-[18px] h-[18px] text-white/75" strokeWidth={1.5} />
                 </div>
                 <div className="flex-1 pt-0.5">
-                  <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 15, fontWeight: 500 }}>
+                  <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 16, fontWeight: 500 }}>
                     {a.title}
                   </div>
                   <div className="text-white/45 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5 }}>

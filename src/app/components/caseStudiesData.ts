@@ -29,10 +29,9 @@ export const caseStudies: CaseStudy[] = [
     role: "Product UI Designer",
     duration: "May 2025 — Present",
     tags: ["B2B SaaS", "0→1", "End-to-end UX"],
-    cover:
-      "https://images.unsplash.com/photo-1737874960921-d1205a4f55da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    cover: "/avyro-cover.png",
     gallery: [
-      "https://images.unsplash.com/photo-1652318522046-8f6057f04fb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "/avyro-cover.png",
       "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-violet-600/30 via-fuchsia-500/10 to-transparent",

@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export function WhyHireMe() {
   return (
     <section className="py-36 border-t border-white/5">
-      <div className="max-w-4xl mx-auto px-6 lg:px-10">
+      <div className="max-w-5xl mx-auto px-6 lg:px-10">
         <div className="mb-16">
           <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
             Approach

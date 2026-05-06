@@ -49,7 +49,7 @@ export function Skills() {
                   <c.icon className="w-[18px] h-[18px] text-white/75" strokeWidth={1.5} />
                 </div>
                 <div className="flex-1 pt-0.5">
-                  <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 15, fontWeight: 500 }}>
+                  <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 16, fontWeight: 500 }}>
                     {c.label}
                   </div>
                   <div className="text-white/45 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.6 }}>
