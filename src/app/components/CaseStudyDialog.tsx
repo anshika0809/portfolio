@@ -158,7 +158,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       transition={{ duration: 0.5, delay: i * 0.08 }}
                       className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent p-7"
                     >
-                      <div className="text-white tracking-tight" style={{ fontSize: 38, fontWeight: 500, fontFamily: "Instrument Serif, serif", lineHeight: 1 }}>
+                      <div className="text-white" style={{ fontSize: 38, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1 }}>
                         {m.value}
                       </div>
                       <div className="text-white/60 mt-2">{m.label}</div>

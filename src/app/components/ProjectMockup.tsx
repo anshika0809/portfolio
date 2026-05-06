@@ -235,7 +235,7 @@ function HealthcareMockup({ compact }: { compact?: boolean }) {
           >
             <div className="text-white/40" style={{ fontSize: 9, fontFamily: "JetBrains Mono, monospace" }}>Your BMI</div>
             <div className="flex items-baseline gap-2 mt-1">
-              <div className="text-white" style={{ fontWeight: 600, fontSize: compact ? 24 : 30, fontFamily: "Instrument Serif, serif" }}>22.4</div>
+              <div className="text-white" style={{ fontWeight: 700, fontSize: compact ? 24 : 30, letterSpacing: "-0.02em" }}>22.4</div>
               <div className="text-emerald-300" style={{ fontSize: 11 }}>Healthy</div>
             </div>
             <div className="mt-3 h-2 rounded-full bg-white/10 overflow-hidden relative">

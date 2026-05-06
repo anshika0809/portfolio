@@ -18,7 +18,7 @@ export function Nav() {
       style={{ backdropFilter: blur.get() ? `blur(${blur.get()}px)` : undefined, backgroundColor: bg }}
       className="fixed top-0 left-0 right-0 z-50 border-b border-white/5"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-400 to-cyan-300 shadow-[0_0_20px_rgba(167,139,250,0.5)]" />
           <span className="tracking-tight text-white/90">Anshika Agrawal</span>

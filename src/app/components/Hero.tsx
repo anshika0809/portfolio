@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 
 export function Hero() {
   const { scrollY } = useScroll();
@@ -8,79 +8,88 @@ export function Hero() {
   const scale = useTransform(scrollY, [0, 800], [1, 0.92]);
 
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-20">
+    <section id="top" className="relative h-screen flex items-center overflow-hidden pt-24 pb-8">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-violet-600/20 blur-[120px]" />
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full bg-cyan-500/10 blur-[120px]" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] rounded-full bg-violet-500/15 blur-[140px]" />
+        <div className="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-cyan-400/8 blur-[130px]" />
         <div
-          className="absolute inset-0 opacity-[0.04]"
+          className="absolute inset-0 opacity-[0.025]"
           style={{
             backgroundImage:
               "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
+            backgroundSize: "80px 80px",
           }}
         />
       </div>
 
-      <motion.div style={{ y, opacity, scale }} className="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-        
+      <motion.div style={{ y, opacity, scale }} className="max-w-6xl mx-auto px-6 lg:px-12 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/[0.03] mb-5"
+        >
+          <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="text-white/65" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12.5, fontWeight: 500 }}>
+            Available for new opportunities
+          </span>
+        </motion.div>
 
-        <h1 className="text-white max-w-5xl tracking-tight" style={{ fontSize: "clamp(48px, 8vw, 112px)", lineHeight: 0.95, fontWeight: 600 }}>
-          <motion.span initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.05 }} className="block">
+        <h1 className="text-white max-w-4xl" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(38px, 6vw, 72px)", lineHeight: 1.05, fontWeight: 700, letterSpacing: "-0.03em" }}>
+          <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="block">
             Designing interfaces
           </motion.span>
           <motion.span
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="block"
-            style={{ fontFamily: "Instrument Serif, serif", fontStyle: "italic", fontWeight: 400 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="block bg-gradient-to-r from-violet-300 via-fuchsia-200 to-cyan-200 bg-clip-text text-transparent"
           >
-            <span className="bg-gradient-to-r from-violet-300 via-fuchsia-200 to-cyan-200 bg-clip-text text-transparent">people enjoy using.</span>
+            people enjoy using.
           </motion.span>
         </h1>
 
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-8 max-w-xl text-white/60 leading-relaxed"
-          style={{ fontSize: 18 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="mt-5 max-w-lg text-white/55 leading-relaxed"
+          style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.7 }}
         >
-          I'm a Product UI Designer with 1.5+ years of experience designing B2B and B2C products across fintech, healthcare, and SaaS. I focus on user journeys, information architecture, and clean, intuitive interfaces — currently leading UI/UX at AVYRO.
+          Product UI Designer with 1.5+ years of experience designing B2B and B2C products across fintech, healthcare, and SaaS. I focus on user journeys, information architecture, and clean, intuitive interfaces.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="mt-7 flex flex-wrap items-center gap-3.5"
         >
-          <a href="#work" className="group inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-black hover:bg-white/90 transition">
+          <a href="#work" className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black hover:bg-white/90 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, fontWeight: 500 }}>
             View selected work
-            <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+            <ArrowDown className="w-[15px] h-[15px] transition-transform group-hover:translate-y-0.5" />
           </a>
-          <a href="#about" className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/15 text-white/80 hover:bg-white/5 hover:text-white transition">
-            <Sparkles className="w-4 h-4" />
-            How I think
+          <a href="/Anshika_Agrawal_CV.pdf" download="Anshika_Agrawal_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, fontWeight: 500 }}>
+            <Download className="w-[15px] h-[15px]" />
+            Download Resume
           </a>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl border-t border-white/10 pt-8"
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl border-t border-white/8 pt-6"
         >
           {[
-            { k: "1.5+", v: "Years designing" },
-            { k: "3", v: "Domains shipped" },
-            { k: "4+", v: "Live products" },
-            { k: "8.89", v: "B.Tech CGPA" },
+            { k: "1.5+", v: "Years of experience" },
+            { k: "Fintech · SaaS · Healthcare", v: "Domain expertise" },
+            { k: "6+", v: "Projects completed" },
+            { k: "4", v: "Satisfied clients" },
           ].map((s) => (
             <div key={s.v}>
-              <div className="text-white tracking-tight" style={{ fontSize: 32, fontWeight: 500, fontFamily: "Instrument Serif, serif" }}>{s.k}</div>
-              <div className="text-white/50 mt-1">{s.v}</div>
+              <div className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: 24, fontWeight: 600, letterSpacing: "-0.015em" }}>{s.k}</div>
+              <div className="text-white/40 mt-1" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>{s.v}</div>
             </div>
           ))}
         </motion.div>

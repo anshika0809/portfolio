@@ -4,8 +4,10 @@ import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
 import { SelectedWork } from "./components/SelectedWork";
 import { About } from "./components/About";
+import { WhyHireMe } from "./components/WhyHireMe";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
+import { Achievements } from "./components/Achievements";
 import { Contact } from "./components/Contact";
 import { CaseStudyDialog } from "./components/CaseStudyDialog";
 import { CaseStudy } from "./components/caseStudiesData";
@@ -19,7 +21,7 @@ export default function App() {
   return (
     <div
       className="min-h-screen bg-[#0a0a0c] text-white antialiased selection:bg-violet-400/40 selection:text-white"
-      style={{ fontFamily: '"Plus Jakarta Sans", system-ui, sans-serif' }}
+      style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
     >
       <PageLoader />
       <motion.div
@@ -31,8 +33,10 @@ export default function App() {
         <Hero />
         <SelectedWork onOpen={setActive} />
         <About />
+        <WhyHireMe />
         <Skills />
         <Experience />
+        <Achievements />
         <Contact />
       </main>
       <CaseStudyDialog cs={active} onClose={() => setActive(null)} />

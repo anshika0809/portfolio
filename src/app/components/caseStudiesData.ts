@@ -30,10 +30,10 @@ export const caseStudies: CaseStudy[] = [
     duration: "May 2025 — Present",
     tags: ["B2B SaaS", "0→1", "End-to-end UX"],
     cover:
-      "https://images.unsplash.com/photo-1581094488379-6a10d04c0f04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+      "https://images.unsplash.com/photo-1737874960921-d1205a4f55da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
     gallery: [
-      "https://images.unsplash.com/photo-1576666735179-f3ad352212c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      "https://images.unsplash.com/photo-1740215306586-363212cac416?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1652318522046-8f6057f04fb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-violet-600/30 via-fuchsia-500/10 to-transparent",
     span: "md:col-span-7",
@@ -71,6 +71,108 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
+    slug: "registerkaro",
+    client: "Register Karo",
+    title: "Legal compliance, made navigable",
+    oneLiner:
+      "Designed the end-to-end web UI for RegisterKaro — an all-in-one legal and compliance platform for startups and businesses in India.",
+    year: "2024",
+    role: "Freelance Web UI Designer",
+    duration: "Freelance Project",
+    tags: ["B2B", "Legaltech", "Web UI"],
+    cover:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    gallery: [
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    ],
+    gradient: "from-blue-500/25 via-indigo-400/10 to-transparent",
+    span: "md:col-span-5",
+    overview:
+      "RegisterKaro helps startups and businesses navigate India's complex legal and compliance landscape. The challenge was making dense regulatory processes feel approachable, trustworthy, and actionable for founders who don't speak legal.",
+    scope: [
+      { label: "Role", value: "Freelance Web UI Designer" },
+      { label: "Platform", value: "Responsive web" },
+      { label: "Focus", value: "Service clarity, trust UX" },
+      { label: "Live Site", value: "registerkaro.in" },
+    ],
+    approach: [
+      {
+        title: "Service architecture first",
+        body: "I reorganized the service structure into clear categories — registration, compliance, legal advisory — so users could self-navigate without a sales call.",
+      },
+      {
+        title: "Trust through transparency",
+        body: "Added clear pricing indicators, timeline estimates, and process breakdowns on every service page. Users needed to know what to expect before they commit.",
+      },
+      {
+        title: "Professional, not sterile",
+        body: "Used a clean, confident design language that feels credible without looking like a government form. Soft blues, structured grids, and readable hierarchy.",
+      },
+    ],
+    insights: [
+      "Founders wanted pricing upfront — hiding it behind 'contact us' killed conversion.",
+      "Breaking down legal processes into visible steps reduced perceived complexity.",
+      "A trustworthy brand experience came from clarity, not from excessive credentials.",
+    ],
+    outcomes: [
+      { value: "Clearer", label: "Service navigation" },
+      { value: "Trustworthy", label: "Design language" },
+      { value: "Live", label: "Production web UI" },
+    ],
+  },
+  {
+    slug: "woods91",
+    client: "Woods 91",
+    title: "A dining experience that starts online",
+    oneLiner:
+      "Designed the complete web UI for Woods 91 — an upscale restaurant and bar brand, focused on elevated visual identity and seamless user experience.",
+    year: "2024",
+    role: "Freelance Web UI Designer",
+    duration: "Freelance Project",
+    tags: ["B2C", "Hospitality", "Web UI"],
+    cover:
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    gallery: [
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    ],
+    gradient: "from-amber-500/25 via-yellow-400/10 to-transparent",
+    span: "md:col-span-7",
+    overview:
+      "Woods 91 is a premium dining and bar experience. The website needed to reflect the same elevated, warm, and inviting atmosphere that guests experience in person — while making reservations, menus, and events immediately accessible.",
+    scope: [
+      { label: "Role", value: "Freelance Web UI Designer" },
+      { label: "Platform", value: "Responsive web" },
+      { label: "Focus", value: "Brand elevation, visual storytelling" },
+      { label: "Live Site", value: "woods91.com" },
+    ],
+    approach: [
+      {
+        title: "Atmosphere as interface",
+        body: "I designed the site to feel like stepping into the space — warm tones, editorial typography, and immersive imagery that sets the mood before the visit.",
+      },
+      {
+        title: "Menu as hero content",
+        body: "Instead of burying the menu in a PDF, I made it a navigable, beautifully presented centerpiece. Users could browse dishes the way they would a gallery.",
+      },
+      {
+        title: "Reservations without friction",
+        body: "Placed reservation CTAs strategically throughout the experience, without interrupting the storytelling. The path to booking felt natural, not pushy.",
+      },
+    ],
+    insights: [
+      "Users browsed the menu before deciding to book — making it visually rich lifted intent.",
+      "A premium feel came from restraint: fewer elements, more breathing room.",
+      "Event sections drove repeat visits when positioned as 'what's happening now' rather than static pages.",
+    ],
+    outcomes: [
+      { value: "Elevated", label: "Brand presence" },
+      { value: "Seamless", label: "Reservation flow" },
+      { value: "Live", label: "Production web UI" },
+    ],
+  },
+  {
     slug: "decor-delights",
     client: "Community Homes",
     title: "Decor Delights — a 3D space to design your home together",
@@ -81,10 +183,10 @@ export const caseStudies: CaseStudy[] = [
     duration: "Sep 2023 — May 2024",
     tags: ["B2C", "3D", "Collaboration"],
     cover:
-      "https://images.unsplash.com/photo-1646987916641-1f3c8992daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+      "https://images.unsplash.com/photo-1738168273959-952fdc961991?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
     gallery: [
-      "https://images.unsplash.com/photo-1628744876490-19b035ecf9c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      "https://images.unsplash.com/photo-1628744876525-f2678d8af47f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1738168246881-40f35f8aba0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-cyan-500/25 via-sky-400/10 to-transparent",
     span: "md:col-span-5",
@@ -95,6 +197,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Tool", value: "Figma" },
       { label: "Audience", value: "Homeowners & decor enthusiasts" },
       { label: "Outcome", value: "Concept design + flows" },
+      { label: "Design Files", value: "View on Drive" },
     ],
     approach: [
       {
@@ -132,9 +235,9 @@ export const caseStudies: CaseStudy[] = [
     duration: "May 2023",
     tags: ["B2C", "Mobile", "Trust UX"],
     cover:
-      "https://images.unsplash.com/photo-1770014773112-98b71e7ff358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+      "https://images.unsplash.com/photo-1620856902651-ce18d6d31d42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
     gallery: [
-      "https://images.unsplash.com/photo-1643321610692-719deb378a33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1761198845268-6d3e7f2262db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-emerald-400/25 via-teal-400/10 to-transparent",
     span: "md:col-span-5",
@@ -182,10 +285,10 @@ export const caseStudies: CaseStudy[] = [
     duration: "Feb 2022 — Jun 2022",
     tags: ["Healthcare", "Responsive", "Web"],
     cover:
-      "https://images.unsplash.com/photo-1666979290238-2d862b573345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+      "https://images.unsplash.com/photo-1612197315273-4ced0a731bba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
     gallery: [
-      "https://images.unsplash.com/photo-1666979289446-6e9ebb257091?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-      "https://images.unsplash.com/photo-1759476532819-e37ac3d05cff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1587937533501-fe57e5a4e3f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "https://images.unsplash.com/photo-1596236100223-f3c656de3038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-amber-400/20 via-orange-400/10 to-transparent",
     span: "md:col-span-7",
@@ -196,6 +299,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Stack", value: "Responsive web" },
       { label: "Audience", value: "Everyday users" },
       { label: "Duration", value: "~5 months" },
+      { label: "Live Site", value: "anshika0809.github.io/Healthcare" },
     ],
     approach: [
       {

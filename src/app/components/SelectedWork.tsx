@@ -5,20 +5,15 @@ import { ProjectMockup } from "./ProjectMockup";
 
 export function SelectedWork({ onOpen }: { onOpen: (cs: CaseStudy) => void }) {
   return (
-    <section id="work" className="py-32 relative">
+    <section id="work" className="py-36 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-end justify-between mb-16">
-          <div>
-            <div className="text-white/40 mb-3" style={{ fontFamily: "JetBrains Mono, monospace" }}>
-              01 — Selected work
-            </div>
-            <h2 className="text-white tracking-tight max-w-2xl" style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1, fontWeight: 600 }}>
-              Stories, not just <span style={{ fontFamily: "Instrument Serif, serif", fontStyle: "italic" }}>screens.</span>
-            </h2>
+        <div className="mb-20">
+          <div className="text-white/40 mb-5 text-sm tracking-wide uppercase" style={{ fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.12em" }}>
+            Selected Work
           </div>
-          <p className="hidden md:block text-white/50 max-w-sm">
-            Four projects, four very different audiences. Tap any card to read the full story — what it was, how I approached it, and what came out the other side.
-          </p>
+          <h2 className="text-white" style={{ fontSize: "clamp(36px, 5vw, 52px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.025em" }}>
+            Case studies
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -72,7 +67,7 @@ export function SelectedWork({ onOpen }: { onOpen: (cs: CaseStudy) => void }) {
                 <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
                   {cs.outcomes.map((m) => (
                     <div key={m.label}>
-                      <div className="text-white tracking-tight" style={{ fontSize: 22, fontWeight: 500, fontFamily: "Instrument Serif, serif" }}>
+                      <div className="text-white" style={{ fontSize: 22, fontWeight: 600, letterSpacing: "-0.01em" }}>
                         {m.value}
                       </div>
                       <div className="text-white/50 mt-1">{m.label}</div>

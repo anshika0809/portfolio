@@ -2,34 +2,35 @@ import { motion } from "motion/react";
 
 export function About() {
   return (
-    <section id="about" className="py-32 relative">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid md:grid-cols-12 gap-12">
-          <div className="md:col-span-4">
-            <div className="text-white/40 mb-3" style={{ fontFamily: "JetBrains Mono, monospace" }}>02 — About</div>
-            <h2 className="text-white tracking-tight" style={{ fontSize: "clamp(36px, 5vw, 56px)", lineHeight: 1, fontWeight: 600 }}>
-              Hi, I'm <span style={{ fontFamily: "Instrument Serif, serif", fontStyle: "italic" }}>Anshika.</span>
-            </h2>
+    <section id="about" className="py-36 border-t border-white/5">
+      <div className="max-w-4xl mx-auto px-6 lg:px-10">
+        <div className="mb-16">
+          <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
+            About
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="md:col-span-8 space-y-6 text-white/70 leading-relaxed"
-            style={{ fontSize: 19 }}
-          >
-            <p>
-              I'm a Product UI Designer based in Gwalior, India, with <span className="text-white">1.5+ years of experience</span> across fintech, healthcare, and SaaS. I care about understanding the user before reaching for pixels — wireframes, IA, and usability tests usually come before the pretty stuff.
-            </p>
-            <p>
-              I'm currently leading end-to-end UI/UX for a B2B industrial workforce product at <span className="text-white">AVYRO</span>, working closely with developers and stakeholders to make the interface adoptable for real on-ground users.
-            </p>
-            <p>
-              Before AVYRO, I designed for BNF Digital, Neritic Industries, and Info Space Export — shipping responsive websites, donation flows, school campaigns, and the Poker Paisa launch. I graduated from <span className="text-white">VIT Bhopal</span> with a B.Tech in CSE and an 8.89 CGPA, and I still bring that engineering lens into every design conversation.
-            </p>
-          </motion.div>
+          <h2 className="text-white mb-8" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.15, fontWeight: 600, letterSpacing: "-0.02em" }}>
+            Hi, I'm Anshika
+          </h2>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="space-y-6 text-white/60"
+          style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.75 }}
+        >
+          <p>
+            I'm a Product UI Designer based in Gwalior, with over a year and a half designing for <span className="text-white" style={{ fontWeight: 500 }}>fintech, healthcare, and SaaS</span> products. I believe good design starts with understanding—not pixels. Before I open Figma, I'm asking questions, mapping flows, testing assumptions.
+          </p>
+          <p>
+            Right now, I'm leading UI/UX for <span className="text-white" style={{ fontWeight: 500 }}>AVYRO</span>, a B2B industrial workforce platform. I work directly with factory supervisors and field crews to design interfaces that work in real, messy conditions—not just in a prototype.
+          </p>
+          <p>
+            Before AVYRO, I shipped work for BNF Digital, Neritic Industries, and Info Space Export—everything from donation flows to school campaign sites to the Poker Paisa launch. I studied Computer Science at VIT Bhopal (8.89 CGPA), which taught me to think in systems, spot edge cases, and speak the same language as developers.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

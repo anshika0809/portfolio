@@ -4,66 +4,95 @@ const roles = [
   {
     co: "AVYRO",
     role: "Product UI Designer",
-    period: "May 2025 — Now",
+    period: "May 2025 — Present",
     location: "Gurgaon, Haryana",
-    note: "Leading end-to-end UI/UX for a B2B industrial workforce product. Flows, wireframes, hi-fi screens, and dev collaboration.",
+    responsibilities: [
+      "Leading end-to-end UI/UX for a B2B industrial workforce platform serving factory supervisors and field crews",
+      "Designing user flows, wireframes, and production-ready interfaces that work in real industrial environments",
+      "Collaborating daily with engineering and stakeholders to ship iterative improvements",
+    ],
   },
   {
     co: "BNF Digital",
     role: "Freelance UI & Web Designer",
     period: "Dec 2024 — Mar 2025",
     location: "Pune, Maharashtra",
-    note: "Designed websites and UI layouts for schools and campaign projects, aligned tightly with each brand's voice.",
+    responsibilities: [
+      "Designed websites and UI systems for schools and campaign projects",
+      "Delivered brand-aligned designs that balanced client vision with user needs",
+    ],
   },
   {
     co: "Neritic Industries",
     role: "Web UI Designer & Developer",
     period: "Jul 2024 — Dec 2024",
     location: "Pune, Maharashtra",
-    note: "Designed and developed 3 responsive websites across different domains. Owned navigation, layout, and visual asset systems.",
+    responsibilities: [
+      "Designed and built 3 responsive websites across different verticals",
+      "Improved site navigation and overall user experience through IA restructuring",
+      "Managed visual asset systems and coordinated with cross-functional teams",
+    ],
   },
   {
     co: "Info Space Export",
     role: "Web Design Intern",
     period: "Sep 2023 — Jan 2024",
     location: "Gurgaon, Haryana",
-    note: "Designed and launched the Poker Paisa website — wireframes, UI screens, and SRS documentation. Supported brand visuals.",
-  },
-  {
-    co: "VIT Bhopal University",
-    role: "B.Tech, Computer Science & Engineering — CGPA 8.89",
-    period: "Sep 2021 — Aug 2025",
-    location: "Bhopal, MP",
-    note: "Core member of GDSC, DSC, Igniters and iOS Clubs. Hackathon finalist. Engineering lens for design problems.",
+    responsibilities: [
+      "Designed and launched the Poker Paisa website from wireframes to launch",
+      "Created UI screens, SRS documentation, and worked with marketing on brand assets",
+    ],
   },
 ];
 
 export function Experience() {
   return (
-    <section id="experience" className="py-32 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="text-white/40 mb-3" style={{ fontFamily: "JetBrains Mono, monospace" }}>04 — Experience</div>
-        <h2 className="text-white tracking-tight mb-16" style={{ fontSize: "clamp(36px, 5vw, 56px)", lineHeight: 1, fontWeight: 600 }}>
-          Where I've been <span style={{ fontFamily: "Instrument Serif, serif", fontStyle: "italic" }}>shipping.</span>
-        </h2>
+    <section id="experience" className="py-48 border-t border-white/5">
+      <div className="max-w-5xl mx-auto px-6 lg:px-10">
+        <div className="mb-24">
+          <div className="text-white/40 mb-5 text-sm tracking-wide uppercase" style={{ fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.12em" }}>
+            Experience
+          </div>
+          <h2 className="text-white" style={{ fontSize: "clamp(36px, 5vw, 52px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.025em" }}>
+            Where I've shipped work
+          </h2>
+        </div>
 
-        <div className="border-t border-white/10">
-          {roles.map((r, i) => (
+        <div className="space-y-16">
+          {roles.map((role, i) => (
             <motion.div
-              key={r.co + r.period}
-              initial={{ opacity: 0, y: 12 }}
+              key={role.co + role.period}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.04 }}
-              className="grid grid-cols-12 gap-4 py-6 border-b border-white/10 group hover:bg-white/[0.02] transition cursor-default px-2 -mx-2 rounded-lg"
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <div className="col-span-12 md:col-span-3 text-white/50" style={{ fontFamily: "JetBrains Mono, monospace" }}>{r.period}</div>
-              <div className="col-span-12 md:col-span-3">
-                <div className="text-white" style={{ fontWeight: 600 }}>{r.co}</div>
-                <div className="text-white/40">{r.location}</div>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div className="md:col-span-4">
+                  <div className="text-white font-medium mb-1.5" style={{ fontSize: 17 }}>
+                    {role.co}
+                  </div>
+                  <div className="text-white/65 mb-3" style={{ fontSize: 15.5 }}>
+                    {role.role}
+                  </div>
+                  <div className="text-white/40 text-sm mb-1" style={{ fontFamily: "JetBrains Mono, monospace" }}>
+                    {role.period}
+                  </div>
+                  <div className="text-white/40 text-sm">
+                    {role.location}
+                  </div>
+                </div>
+                <div className="md:col-span-8">
+                  <ul className="space-y-3">
+                    {role.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="text-white/65 leading-relaxed flex items-start gap-3.5" style={{ fontSize: 15.5, lineHeight: 1.7 }}>
+                        <span className="text-white/25 mt-2 text-xs">●</span>
+                        <span>{resp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="col-span-12 md:col-span-3 text-white/70">{r.role}</div>
-              <div className="col-span-12 md:col-span-3 text-white/50">{r.note}</div>
             </motion.div>
           ))}
         </div>

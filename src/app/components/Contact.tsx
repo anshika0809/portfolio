@@ -3,50 +3,43 @@ import { ArrowUpRight, Mail } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 border-t border-white/5 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 opacity-50">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-violet-600/30 blur-[120px]" />
-      </div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 text-center">
-        <div className="text-white/40 mb-4" style={{ fontFamily: "JetBrains Mono, monospace" }}>05 — Contact</div>
+    <section id="contact" className="py-36 border-t border-white/5">
+      <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
+        <div className="text-white/35 mb-5 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
+          Let's Work Together
+        </div>
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-white tracking-tight mx-auto max-w-4xl"
-          style={{ fontSize: "clamp(48px, 8vw, 112px)", lineHeight: 0.95, fontWeight: 600 }}
+          transition={{ duration: 0.6 }}
+          className="text-white mx-auto"
+          style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.15, fontWeight: 600, letterSpacing: "-0.02em", maxWidth: "600px" }}
         >
-          Let's build <span style={{ fontFamily: "Instrument Serif, serif", fontStyle: "italic" }}>something</span> users genuinely love.
+          Let's build something worth using
         </motion.h2>
 
-        <p className="mt-8 text-white/60 max-w-xl mx-auto" style={{ fontSize: 18 }}>
-          Open to product design roles, freelance UI projects, and thoughtful collaborations. I usually reply within a day.
+        <p className="mt-6 text-white/50 max-w-lg mx-auto" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.7 }}>
+          Open to product design roles, freelance projects, and meaningful collaborations.
         </p>
 
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:anshikaagrawalwork08@gmail.com" className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-black hover:bg-white/90 transition">
-            <Mail className="w-4 h-4" />
-            anshikaagrawalwork08@gmail.com
-            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5">
+          <a href="https://www.linkedin.com/in/anshika-agrawal-b473a521b/" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black hover:bg-white/90 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500 }}>
+            Message me on LinkedIn
+            <ArrowUpRight className="w-[15px] h-[15px] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>
-          <a href="tel:+919893018095" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/15 text-white/80 hover:bg-white/5 hover:text-white transition">
-            +91 98930 18095
+          <a href="mailto:anshikaagrawalwork08@gmail.com" className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500 }}>
+            <Mail className="w-[15px] h-[15px]" />
+            Email
           </a>
-          <a href="https://anshika0809.github.io/Anshika-Portfolio/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/15 text-white/80 hover:bg-white/5 hover:text-white transition">
-            Portfolio
-          </a>
-          <a href="#" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/15 text-white/80 hover:bg-white/5 hover:text-white transition">
-            LinkedIn
-          </a>
-          <a href="#" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/15 text-white/80 hover:bg-white/5 hover:text-white transition">
+          <a href="https://github.com/anshika0809" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500 }}>
             GitHub
           </a>
         </div>
 
-        <div className="mt-32 pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-white/40">
-          <div style={{ fontFamily: "JetBrains Mono, monospace" }}>© 2026 Anshika Agrawal — Gwalior, India.</div>
-          <div style={{ fontFamily: "JetBrains Mono, monospace" }}>Designed & built in Figma Make</div>
+        <div className="mt-24 pt-6 border-t border-white/8 flex flex-wrap items-center justify-between gap-4 text-white/30 text-xs">
+          <div style={{ fontFamily: "DM Sans, sans-serif" }}>Anshika Agrawal — Gwalior, India</div>
+          <div style={{ fontFamily: "DM Sans, sans-serif" }}>Designed & built in Figma Make</div>
         </div>
       </div>
     </section>
