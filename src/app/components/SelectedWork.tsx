@@ -8,10 +8,10 @@ export function SelectedWork({ onOpen }: { onOpen: (cs: CaseStudy) => void }) {
     <section id="work" className="py-36 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="mb-20">
-          <div className="text-white/40 mb-5 text-sm tracking-wide uppercase" style={{ fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.12em" }}>
+          <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
             Selected Work
           </div>
-          <h2 className="text-white" style={{ fontSize: "clamp(36px, 5vw, 52px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.025em" }}>
+          <h2 className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.15, fontWeight: 600, letterSpacing: "-0.02em" }}>
             Case studies
           </h2>
         </div>
@@ -31,12 +31,16 @@ export function SelectedWork({ onOpen }: { onOpen: (cs: CaseStudy) => void }) {
               <div className="relative aspect-[16/10] overflow-hidden bg-[#0c0c10]">
                 <motion.div
                   className="absolute inset-0"
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <ProjectMockup slug={cs.slug} compact />
+                  <img
+                    src={cs.cover}
+                    alt={cs.title}
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
-                <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-60`} />
+                <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-30`} />
 
                 <div className="absolute top-5 left-5 right-5 flex items-start justify-between">
                   <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 backdrop-blur border border-white/10 text-white/80" style={{ fontFamily: "JetBrains Mono, monospace" }}>

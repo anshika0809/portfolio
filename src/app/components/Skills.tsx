@@ -52,7 +52,7 @@ export function Skills() {
                   <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 15, fontWeight: 500 }}>
                     {c.label}
                   </div>
-                  <div className="text-white/45 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13.5, lineHeight: 1.6 }}>
+                  <div className="text-white/45 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.6 }}>
                     {c.hint}
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export function Skills() {
                   className="w-2 h-2 rounded-full"
                   style={{ backgroundColor: tool.color }}
                 />
-                <span className="text-white/85" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13.5, fontWeight: 500 }}>
+                <span className="text-white/85" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, fontWeight: 500 }}>
                   {tool.name}
                 </span>
               </motion.div>

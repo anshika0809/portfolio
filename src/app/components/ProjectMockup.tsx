@@ -5,8 +5,9 @@ type Props = { slug: string; compact?: boolean };
 export function ProjectMockup({ slug, compact }: Props) {
   if (slug === "avyro") return <AvyroMockup compact={compact} />;
   if (slug === "decor-delights") return <DecorMockup compact={compact} />;
-  if (slug === "empower-donation") return <EmpowerMockup compact={compact} />;
   if (slug === "healthcare") return <HealthcareMockup compact={compact} />;
+  if (slug === "registerkaro") return <RegisterKaroMockup compact={compact} />;
+  if (slug === "woods91") return <Woods91Mockup compact={compact} />;
   return null;
 }
 
@@ -288,6 +289,26 @@ function HealthcareMockup({ compact }: { compact?: boolean }) {
             </motion.div>
           ))}
         </div>
+      </div>
+    </Frame>
+  );
+}
+
+function RegisterKaroMockup({ compact }: { compact?: boolean }) {
+  return (
+    <Frame tone="bg-gradient-to-br from-[#0d1318] via-[#0c1014] to-[#0a0a0c]">
+      <div className="absolute inset-0 flex items-center justify-center p-6">
+        <img src="/registerkaro-cover.png" alt="Register Karo" className="w-full h-full object-cover rounded-lg" />
+      </div>
+    </Frame>
+  );
+}
+
+function Woods91Mockup({ compact }: { compact?: boolean }) {
+  return (
+    <Frame tone="bg-gradient-to-br from-[#1a1411] via-[#13110f] to-[#0a0a0c]">
+      <div className="absolute inset-0 flex items-center justify-center p-6">
+        <img src="/woods91-cover.png" alt="Woods 91" className="w-full h-full object-cover rounded-lg" />
       </div>
     </Frame>
   );

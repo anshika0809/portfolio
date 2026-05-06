@@ -27,7 +27,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/[0.03] mb-5"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/[0.03] mb-5 mt-4"
         >
           <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-white/65" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12.5, fontWeight: 500 }}>
@@ -69,7 +69,7 @@ export function Hero() {
             View selected work
             <ArrowDown className="w-[15px] h-[15px] transition-transform group-hover:translate-y-0.5" />
           </a>
-          <a href="/Anshika_Agrawal_CV.pdf" download="Anshika_Agrawal_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, fontWeight: 500 }}>
+          <a href="https://drive.google.com/file/d/1U6BuS9iUB3ddrEi_OiM089QFxjuxQr_j/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, fontWeight: 500 }}>
             <Download className="w-[15px] h-[15px]" />
             Download Resume
           </a>
@@ -79,13 +79,12 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl border-t border-white/8 pt-6"
+          className="mt-10 grid grid-cols-3 gap-8 max-w-xl border-t border-white/8 pt-6"
         >
           {[
             { k: "1.5+", v: "Years of experience" },
-            { k: "Fintech · SaaS · Healthcare", v: "Domain expertise" },
+            { k: "3+", v: "Domains" },
             { k: "6+", v: "Projects completed" },
-            { k: "4", v: "Satisfied clients" },
           ].map((s) => (
             <div key={s.v}>
               <div className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: 24, fontWeight: 600, letterSpacing: "-0.015em" }}>{s.k}</div>

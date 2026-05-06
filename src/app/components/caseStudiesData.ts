@@ -80,10 +80,9 @@ export const caseStudies: CaseStudy[] = [
     role: "Freelance Web UI Designer",
     duration: "Freelance Project",
     tags: ["B2B", "Legaltech", "Web UI"],
-    cover:
-      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    cover: "/registerkaro-cover.png",
     gallery: [
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "/registerkaro-cover.png",
       "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-blue-500/25 via-indigo-400/10 to-transparent",
@@ -131,10 +130,9 @@ export const caseStudies: CaseStudy[] = [
     role: "Freelance Web UI Designer",
     duration: "Freelance Project",
     tags: ["B2C", "Hospitality", "Web UI"],
-    cover:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    cover: "/woods91-cover.png",
     gallery: [
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "/woods91-cover.png",
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-amber-500/25 via-yellow-400/10 to-transparent",
@@ -182,10 +180,9 @@ export const caseStudies: CaseStudy[] = [
     role: "Product Designer",
     duration: "Sep 2023 — May 2024",
     tags: ["B2C", "3D", "Collaboration"],
-    cover:
-      "https://images.unsplash.com/photo-1738168273959-952fdc961991?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    cover: "/decor-delights-cover.png",
     gallery: [
-      "https://images.unsplash.com/photo-1738168259543-d0c58e2b91ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "/decor-delights-cover.png",
       "https://images.unsplash.com/photo-1738168246881-40f35f8aba0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-cyan-500/25 via-sky-400/10 to-transparent",
@@ -225,56 +222,6 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "empower-donation",
-    client: "Empower Donation",
-    title: "A donation flow that earns trust at every tap",
-    oneLiner:
-      "A mobile-first donation experience where transparency isn't a footer — it's the product.",
-    year: "2023",
-    role: "Product Designer",
-    duration: "May 2023",
-    tags: ["B2C", "Mobile", "Trust UX"],
-    cover:
-      "https://images.unsplash.com/photo-1620856902651-ce18d6d31d42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
-    gallery: [
-      "https://images.unsplash.com/photo-1761198845268-6d3e7f2262db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
-    ],
-    gradient: "from-emerald-400/25 via-teal-400/10 to-transparent",
-    span: "md:col-span-5",
-    overview:
-      "Donors hesitate when they can't see where their money goes. Empower Donation reframes the donation moment as a relationship — every step shows the recipient, the allocation, and what happens next.",
-    scope: [
-      { label: "Role", value: "Product Designer" },
-      { label: "Platform", value: "Mobile-first" },
-      { label: "Focus", value: "Trust UX, transparency" },
-      { label: "Duration", value: "1 month" },
-    ],
-    approach: [
-      {
-        title: "Reframing the moment",
-        body: "I rewrote the brief from 'collect a donation' to 'prove intent, allocation, and impact'. Every screen had to answer one question: where exactly is my money going?",
-      },
-      {
-        title: "Stepped flow, not a wall",
-        body: "I broke the donation into a short, paced flow — recipient context, amount, allocation breakdown, then a confirmation that doubles as a receipt and a follow-up promise.",
-      },
-      {
-        title: "Quiet proof, not loud trust",
-        body: "Verified badges, allocation charts, and post-donation updates do the trust work without shouting. The UI stays warm and human.",
-      },
-    ],
-    insights: [
-      "Showing allocation before payment lifted intent more than testimonials did.",
-      "A confirmation screen that promises updates beat a generic thank-you every time.",
-      "Trust UX is mostly about removing doubt, not adding features.",
-    ],
-    outcomes: [
-      { value: "Higher", label: "Donor confidence" },
-      { value: "Clearer", label: "Allocation visibility" },
-      { value: "Warmer", label: "Brand experience" },
-    ],
-  },
-  {
     slug: "healthcare",
     client: "Healthcare Web Platform",
     title: "A health platform where the tools are the hero",
@@ -284,10 +231,9 @@ export const caseStudies: CaseStudy[] = [
     role: "Web UI Designer",
     duration: "Feb 2022 — Jun 2022",
     tags: ["Healthcare", "Responsive", "Web"],
-    cover:
-      "https://images.unsplash.com/photo-1612197315273-4ced0a731bba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600",
+    cover: "/healthcare-cover.png",
     gallery: [
-      "https://images.unsplash.com/photo-1587937533501-fe57e5a4e3f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      "/healthcare-cover.png",
       "https://images.unsplash.com/photo-1596236100223-f3c656de3038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-amber-400/20 via-orange-400/10 to-transparent",

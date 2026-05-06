@@ -47,46 +47,46 @@ const roles = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-48 border-t border-white/5">
+    <section id="experience" className="py-36 border-t border-white/5">
       <div className="max-w-5xl mx-auto px-6 lg:px-10">
-        <div className="mb-24">
-          <div className="text-white/40 mb-5 text-sm tracking-wide uppercase" style={{ fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.12em" }}>
+        <div className="mb-20">
+          <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
             Experience
           </div>
-          <h2 className="text-white" style={{ fontSize: "clamp(36px, 5vw, 52px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.025em" }}>
+          <h2 className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.15, fontWeight: 600, letterSpacing: "-0.02em" }}>
             Where I've shipped work
           </h2>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-14">
           {roles.map((role, i) => (
             <motion.div
               key={role.co + role.period}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
+              transition={{ duration: 0.5, delay: i * 0.06 }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div className="md:col-span-4">
-                  <div className="text-white font-medium mb-1.5" style={{ fontSize: 17 }}>
+                  <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 16, fontWeight: 500 }}>
                     {role.co}
                   </div>
-                  <div className="text-white/65 mb-3" style={{ fontSize: 15.5 }}>
+                  <div className="text-white/55 mb-2.5" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5 }}>
                     {role.role}
                   </div>
-                  <div className="text-white/40 text-sm mb-1" style={{ fontFamily: "JetBrains Mono, monospace" }}>
+                  <div className="text-white/35 text-xs mb-0.5" style={{ fontFamily: "DM Sans, sans-serif", fontWeight: 500 }}>
                     {role.period}
                   </div>
-                  <div className="text-white/40 text-sm">
+                  <div className="text-white/35 text-xs" style={{ fontFamily: "DM Sans, sans-serif" }}>
                     {role.location}
                   </div>
                 </div>
                 <div className="md:col-span-8">
-                  <ul className="space-y-3">
+                  <ul className="space-y-2.5">
                     {role.responsibilities.map((resp, idx) => (
-                      <li key={idx} className="text-white/65 leading-relaxed flex items-start gap-3.5" style={{ fontSize: 15.5, lineHeight: 1.7 }}>
-                        <span className="text-white/25 mt-2 text-xs">●</span>
+                      <li key={idx} className="text-white/55 leading-relaxed flex items-start gap-3" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.7 }}>
+                        <span className="text-white/20 mt-1.5 text-xs">●</span>
                         <span>{resp}</span>
                       </li>
                     ))}

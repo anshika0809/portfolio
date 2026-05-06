@@ -29,33 +29,33 @@ export function Achievements() {
     <section className="py-36 border-t border-white/5">
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <div className="mb-16">
-          <div className="text-white/40 mb-5 text-sm tracking-wide uppercase" style={{ fontFamily: "JetBrains Mono, monospace", letterSpacing: "0.12em" }}>
+          <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
             Recognition
           </div>
-          <h2 className="text-white" style={{ fontSize: "clamp(36px, 5vw, 52px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.025em" }}>
+          <h2 className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.15, fontWeight: 600, letterSpacing: "-0.02em" }}>
             Milestones
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {achievements.map((a, i) => (
             <motion.div
               key={a.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
+              transition={{ duration: 0.5, delay: i * 0.06 }}
               className="group"
             >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg border border-white/10 bg-white/[0.02] flex items-center justify-center shrink-0 group-hover:border-white/20 transition-colors">
-                  <a.icon className="w-5 h-5 text-white/80" strokeWidth={1.5} />
+              <div className="flex items-start gap-3.5">
+                <div className="w-11 h-11 rounded-lg border border-white/10 bg-white/[0.02] flex items-center justify-center shrink-0 group-hover:border-white/20 transition-colors">
+                  <a.icon className="w-[18px] h-[18px] text-white/75" strokeWidth={1.5} />
                 </div>
-                <div className="flex-1 pt-1">
-                  <div className="text-white mb-2 font-medium" style={{ fontSize: 16.5 }}>
+                <div className="flex-1 pt-0.5">
+                  <div className="text-white mb-1.5" style={{ fontFamily: "Sora, sans-serif", fontSize: 15, fontWeight: 500 }}>
                     {a.title}
                   </div>
-                  <div className="text-white/55 leading-relaxed" style={{ fontSize: 14.5 }}>
+                  <div className="text-white/45 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5 }}>
                     {a.org}
                   </div>
                 </div>
