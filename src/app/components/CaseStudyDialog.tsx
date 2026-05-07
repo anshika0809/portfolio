@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from "motion/react";
 import { X, ArrowRight, Sparkles } from "lucide-react";
 import { CaseStudy } from "./caseStudiesData";
 import { useEffect } from "react";
-import { ProjectMockup } from "./ProjectMockup";
 
 export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose: () => void }) {
   useEffect(() => {
@@ -33,7 +32,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
             exit={{ y: 40, opacity: 0 }}
             transition={{ type: "spring", damping: 26, stiffness: 220 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative max-w-5xl mx-auto my-10 rounded-3xl border border-white/10 bg-[#0a0a0c] overflow-hidden shadow-2xl shadow-black/50"
+            className="relative w-[calc(100%-2rem)] max-w-5xl mx-auto my-10 rounded-3xl border border-white/10 bg-[#0a0a0c] overflow-hidden shadow-2xl shadow-black/50"
           >
             <button
               onClick={onClose}
@@ -54,7 +53,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 <img
                   src={cs.cover}
                   alt={cs.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </motion.div>
               <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-30`} />
@@ -64,43 +63,43 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="absolute bottom-8 left-8 right-8 lg:bottom-12 lg:left-12 lg:right-12"
+                className="absolute bottom-8 left-6 right-6 lg:bottom-12 lg:left-10 lg:right-10"
               >
-                <div className="flex items-center gap-2 text-white/70 mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13.5 }}>
+                <div className="flex items-center gap-2 text-white/70 mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14 }}>
                   <span>{cs.year}</span>
                   <span className="text-white/30">·</span>
                   <span>{cs.client}</span>
                   <span className="text-white/30">·</span>
                   <span>{cs.role}</span>
                 </div>
-                <h2 className="text-white tracking-tight max-w-3xl" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 5vw, 52px)", lineHeight: 1.05, fontWeight: 600, letterSpacing: "-0.02em" }}>
+                <h2 className="text-white tracking-tight max-w-3xl" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.02em" }}>
                   {cs.title}
                 </h2>
               </motion.div>
             </div>
 
             {/* Body */}
-            <div className="p-8 lg:p-14 space-y-16">
+            <div className="px-6 py-10 lg:px-10 lg:py-14 space-y-14">
               <Reveal>
-                <p className="text-white/75 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 18, lineHeight: 1.75 }}>
+                <p className="text-white/75 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.75 }}>
                   {cs.oneLiner}
                 </p>
               </Reveal>
 
               {/* Scope strip */}
               <Reveal>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-2">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-3">
                   {cs.scope.map((s) => (
                     <div key={s.label} className="px-4 py-4 rounded-xl">
                       <div className="text-white/40" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>{s.label}</div>
-                      <div className="text-white mt-1.5" style={{ fontFamily: "Sora, sans-serif", fontWeight: 600, fontSize: 15 }}>{s.value}</div>
+                      <div className="text-white mt-1.5" style={{ fontFamily: "Sora, sans-serif", fontWeight: 600, fontSize: 16 }}>{s.value}</div>
                     </div>
                   ))}
                 </div>
               </Reveal>
 
               <Section label="01" title="Overview">
-                <p className="text-white/70 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16.5, lineHeight: 1.75 }}>{cs.overview}</p>
+                <p className="text-white/70 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.75 }}>{cs.overview}</p>
               </Section>
 
               <Section label="02" title="Approach">
@@ -115,7 +114,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 hover:border-white/20 hover:bg-white/[0.04] transition"
                     >
                       <div className="text-white/30 mb-3" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>0{i + 1}</div>
-                      <div className="text-white mb-2" style={{ fontFamily: "Sora, sans-serif", fontWeight: 500, fontSize: 17 }}>{p.title}</div>
+                      <div className="text-white mb-2" style={{ fontFamily: "Sora, sans-serif", fontWeight: 500, fontSize: 16 }}>{p.title}</div>
                       <p className="text-white/60 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.7 }}>{p.body}</p>
                     </motion.div>
                   ))}
@@ -136,7 +135,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       <img
                         src={img}
                         alt={`${cs.title} screenshot ${i + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                       />
                       <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-20`} />
                     </motion.div>
@@ -177,13 +176,13 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       <div className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: 36, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1 }}>
                         {m.value}
                       </div>
-                      <div className="text-white/60 mt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14 }}>{m.label}</div>
+                      <div className="text-white/60 mt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.6 }}>{m.label}</div>
                     </motion.div>
                   ))}
                 </div>
               </Section>
 
-              <a href={cs.link} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-4">
+              <a href={cs.link} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, fontWeight: 500 }}>
                 {cs.slug === "avyro" ? "Message me on LinkedIn to have a look at my work" : "View Detailed Work"}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
@@ -216,10 +215,10 @@ function Section({ label, title, children }: { label: string; title: string; chi
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
         transition={{ duration: 0.5 }}
-        className="flex items-baseline gap-4 mb-7"
+        className="flex items-baseline gap-4 mb-6"
       >
         <span className="text-white/30" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>{label}</span>
-        <h3 className="text-white tracking-tight" style={{ fontFamily: "Sora, sans-serif", fontSize: 26, fontWeight: 600, letterSpacing: "-0.015em" }}>{title}</h3>
+        <h3 className="text-white tracking-tight" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.15, fontWeight: 600, letterSpacing: "-0.02em" }}>{title}</h3>
       </motion.div>
       {children}
     </section>
