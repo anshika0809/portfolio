@@ -37,10 +37,9 @@ export function Contact() {
           </a>
         </div>
 
-        <div className="mt-24 pt-6 border-t border-white/8 flex flex-wrap items-center justify-between gap-4 text-white/30 text-xs">
+        {/* <div className="mt-24 pt-6 border-t border-white/8 flex flex-wrap items-center justify-between gap-4 text-white/30 text-xs">
           <div style={{ fontFamily: "DM Sans, sans-serif" }}>Anshika Agrawal — Gwalior, India</div>
-          <div style={{ fontFamily: "DM Sans, sans-serif" }}>Designed & built in Figma Make</div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
