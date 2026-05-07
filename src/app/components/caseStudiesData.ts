@@ -12,6 +12,7 @@ export type CaseStudy = {
   gradient: string;
   span: string;
   overview: string;
+  link?: string;
   scope: { label: string; value: string }[];
   approach: { title: string; body: string }[];
   insights: string[];
@@ -23,6 +24,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "avyro",
     client: "AVYRO",
     title: "A workforce platform built for the factory floor",
+    link: "https://www.linkedin.com/in/anshika-agrawal-b473a521b",
     oneLiner:
       "Designing the end-to-end UI/UX for a B2B industrial workforce product — supervisors and on-ground crews, one shared system.",
     year: "2025",
@@ -32,7 +34,7 @@ export const caseStudies: CaseStudy[] = [
     cover: "/avyro-cover.png",
     gallery: [
       "/avyro-cover.png",
-      "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      // "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-violet-600/30 via-fuchsia-500/10 to-transparent",
     span: "md:col-span-7",
@@ -77,12 +79,13 @@ export const caseStudies: CaseStudy[] = [
       "Designed the end-to-end web UI for RegisterKaro — an all-in-one legal and compliance platform for startups and businesses in India.",
     year: "2024",
     role: "Freelance Web UI Designer",
+    link: "https://drive.google.com/file/d/1zCxmMCFIfeVsDj1bBXoFDcjz1eEW-6Tn/view?usp=sharing",
     duration: "Freelance Project",
     tags: ["B2B", "Legaltech", "Web UI"],
     cover: "/registerkaro-cover.png",
     gallery: [
       "/registerkaro-cover.png",
-      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      // "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-blue-500/25 via-indigo-400/10 to-transparent",
     span: "md:col-span-5",
@@ -123,6 +126,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "woods91",
     client: "Woods 91",
     title: "A dining experience that starts online",
+    link: "https://drive.google.com/file/d/1fwfd6HrIvc5bgowPw7WA4pCsSBzYKjlO/view?usp=sharing",
     oneLiner:
       "Designed the complete web UI for Woods 91 — an upscale restaurant and bar brand, focused on elevated visual identity and seamless user experience.",
     year: "2024",
@@ -132,7 +136,7 @@ export const caseStudies: CaseStudy[] = [
     cover: "/woods91-cover.png",
     gallery: [
       "/woods91-cover.png",
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      // "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-amber-500/25 via-yellow-400/10 to-transparent",
     span: "md:col-span-7",
@@ -172,6 +176,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "decor-delights",
     client: "Community Homes",
+    link: "https://drive.google.com/file/d/17lPgYL8aZ4JfV22YfzsaWgzv9pMnUlC6/view",
     title: "Decor Delights — a 3D space to design your home together",
     oneLiner:
       "A collaborative 3D home-decor interface where families can visualize, swap, and decide on decor in real time.",
@@ -182,7 +187,7 @@ export const caseStudies: CaseStudy[] = [
     cover: "/decor-delights-cover.png",
     gallery: [
       "/decor-delights-cover.png",
-      "https://images.unsplash.com/photo-1738168246881-40f35f8aba0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      // "https://images.unsplash.com/photo-1738168246881-40f35f8aba0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-cyan-500/25 via-sky-400/10 to-transparent",
     span: "md:col-span-5",
@@ -193,7 +198,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Tool", value: "Figma" },
       { label: "Audience", value: "Homeowners & decor enthusiasts" },
       { label: "Outcome", value: "Concept design + flows" },
-      { label: "Design Files", value: "View on Drive" },
+      // { label: "Design Files", value: "View on Drive" },
     ],
     approach: [
       {
@@ -224,6 +229,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "healthcare",
     client: "Healthcare Web Platform",
     title: "A health platform where the tools are the hero",
+    link: "https://anshika0809.github.io/Healthcare",
     oneLiner:
       "A responsive health website with a BMI calculator and personalized recommendations — useful, not just informative.",
     year: "2022",
@@ -233,7 +239,7 @@ export const caseStudies: CaseStudy[] = [
     cover: "/healthcare-cover.png",
     gallery: [
       "/healthcare-cover.png",
-      "https://images.unsplash.com/photo-1596236100223-f3c656de3038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+      // "https://images.unsplash.com/photo-1596236100223-f3c656de3038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-amber-400/20 via-orange-400/10 to-transparent",
     span: "md:col-span-7",
@@ -244,7 +250,6 @@ export const caseStudies: CaseStudy[] = [
       { label: "Stack", value: "Responsive web" },
       { label: "Audience", value: "Everyday users" },
       { label: "Duration", value: "~5 months" },
-      { label: "Live Site", value: "anshika0809.github.io/Healthcare" },
     ],
     approach: [
       {

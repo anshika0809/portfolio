@@ -12,11 +12,10 @@ const capabilities = [
 
 const tools = [
   { name: "Figma", color: "#0ACF83" },
-  { name: "Stitches", color: "#6366F1" },
+  { name: "Stitch", color: "#6366F1" },
   { name: "Adobe XD", color: "#FF61F6" },
   { name: "Framer", color: "#0055FF" },
   { name: "ProtoPie", color: "#8B5CF6" },
-  { name: "WordPress", color: "#21759B" },
   { name: "Emergent", color: "#10B981" },
   { name: "Midjourney", color: "#F59E0B" },
 ];

@@ -183,10 +183,10 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 </div>
               </Section>
 
-              <button onClick={onClose} className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-4">
-                Back to all work
+              <a href={cs.link} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-4">
+                {cs.slug === "avyro" ? "Message me on LinkedIn to have a look at my work" : "View Detailed Work"}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </button>
+              </a>
             </div>
           </motion.article>
         </motion.div>
