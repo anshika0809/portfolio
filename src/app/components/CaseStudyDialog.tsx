@@ -51,9 +51,13 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                 className="absolute inset-0"
               >
-                <ProjectMockup slug={cs.slug} />
+                <img
+                  src={cs.cover}
+                  alt={cs.title}
+                  className="w-full h-full object-cover"
+                />
               </motion.div>
-              <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-50`} />
+              <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-30`} />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-[#0a0a0c]/30 to-transparent pointer-events-none" />
 
               <motion.div
@@ -62,14 +66,14 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="absolute bottom-8 left-8 right-8 lg:bottom-12 lg:left-12 lg:right-12"
               >
-                <div className="flex items-center gap-2 text-white/70 mb-4" style={{ fontFamily: "JetBrains Mono, monospace" }}>
+                <div className="flex items-center gap-2 text-white/70 mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 13.5 }}>
                   <span>{cs.year}</span>
                   <span className="text-white/30">·</span>
                   <span>{cs.client}</span>
                   <span className="text-white/30">·</span>
                   <span>{cs.role}</span>
                 </div>
-                <h2 className="text-white tracking-tight max-w-3xl" style={{ fontSize: "clamp(32px, 5vw, 56px)", lineHeight: 1.05, fontWeight: 600 }}>
+                <h2 className="text-white tracking-tight max-w-3xl" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 5vw, 52px)", lineHeight: 1.05, fontWeight: 600, letterSpacing: "-0.02em" }}>
                   {cs.title}
                 </h2>
               </motion.div>
@@ -78,7 +82,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
             {/* Body */}
             <div className="p-8 lg:p-14 space-y-16">
               <Reveal>
-                <p className="text-white/75 max-w-3xl leading-relaxed" style={{ fontSize: 20 }}>
+                <p className="text-white/75 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 18, lineHeight: 1.75 }}>
                   {cs.oneLiner}
                 </p>
               </Reveal>
@@ -88,15 +92,15 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-2">
                   {cs.scope.map((s) => (
                     <div key={s.label} className="px-4 py-4 rounded-xl">
-                      <div className="text-white/40" style={{ fontFamily: "JetBrains Mono, monospace" }}>{s.label}</div>
-                      <div className="text-white mt-1.5" style={{ fontWeight: 600 }}>{s.value}</div>
+                      <div className="text-white/40" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>{s.label}</div>
+                      <div className="text-white mt-1.5" style={{ fontFamily: "Sora, sans-serif", fontWeight: 600, fontSize: 15 }}>{s.value}</div>
                     </div>
                   ))}
                 </div>
               </Reveal>
 
               <Section label="01" title="Overview">
-                <p className="text-white/70 max-w-3xl leading-relaxed" style={{ fontSize: 18 }}>{cs.overview}</p>
+                <p className="text-white/70 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 16.5, lineHeight: 1.75 }}>{cs.overview}</p>
               </Section>
 
               <Section label="02" title="Approach">
@@ -110,22 +114,34 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       transition={{ duration: 0.5, delay: i * 0.08 }}
                       className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 hover:border-white/20 hover:bg-white/[0.04] transition"
                     >
-                      <div className="text-white/30 mb-3" style={{ fontFamily: "JetBrains Mono, monospace" }}>0{i + 1}</div>
-                      <div className="text-white mb-2" style={{ fontWeight: 500, fontSize: 18 }}>{p.title}</div>
-                      <p className="text-white/60 leading-relaxed">{p.body}</p>
+                      <div className="text-white/30 mb-3" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>0{i + 1}</div>
+                      <div className="text-white mb-2" style={{ fontFamily: "Sora, sans-serif", fontWeight: 500, fontSize: 17 }}>{p.title}</div>
+                      <p className="text-white/60 leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.7 }}>{p.body}</p>
                     </motion.div>
                   ))}
                 </div>
               </Section>
 
               <Section label="03" title="Visual snapshots">
-                <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[16/9] relative bg-[#0a0a0c]">
-                  <ProjectMockup slug={cs.slug} />
-                  <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-30`} />
+                <div className="space-y-4">
+                  {cs.gallery.map((img, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: i * 0.1 }}
+                      className="rounded-2xl overflow-hidden border border-white/10 aspect-[16/9] relative bg-[#0a0a0c]"
+                    >
+                      <img
+                        src={img}
+                        alt={`${cs.title} screenshot ${i + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-20`} />
+                    </motion.div>
+                  ))}
                 </div>
-                <p className="text-white/45 mt-3" style={{ fontFamily: "JetBrains Mono, monospace" }}>
-                  // illustrative mockup — drop your actual screens to replace
-                </p>
               </Section>
 
               <Section label="04" title="Key insights">
@@ -138,7 +154,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: i * 0.06 }}
                       className="flex items-start gap-3 text-white/70 leading-relaxed"
-                      style={{ fontSize: 17 }}
+                      style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.75 }}
                     >
                       <Sparkles className="w-4 h-4 mt-1 text-violet-300/80 shrink-0" />
                       <span>{it}</span>
@@ -158,10 +174,10 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       transition={{ duration: 0.5, delay: i * 0.08 }}
                       className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent p-7"
                     >
-                      <div className="text-white" style={{ fontSize: 38, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1 }}>
+                      <div className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: 36, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1 }}>
                         {m.value}
                       </div>
-                      <div className="text-white/60 mt-2">{m.label}</div>
+                      <div className="text-white/60 mt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14 }}>{m.label}</div>
                     </motion.div>
                   ))}
                 </div>
@@ -202,8 +218,8 @@ function Section({ label, title, children }: { label: string; title: string; chi
         transition={{ duration: 0.5 }}
         className="flex items-baseline gap-4 mb-7"
       >
-        <span className="text-white/30" style={{ fontFamily: "JetBrains Mono, monospace" }}>{label}</span>
-        <h3 className="text-white tracking-tight" style={{ fontSize: 28, fontWeight: 600 }}>{title}</h3>
+        <span className="text-white/30" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>{label}</span>
+        <h3 className="text-white tracking-tight" style={{ fontFamily: "Sora, sans-serif", fontSize: 26, fontWeight: 600, letterSpacing: "-0.015em" }}>{title}</h3>
       </motion.div>
       {children}
     </section>

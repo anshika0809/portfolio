@@ -69,7 +69,7 @@ export function Hero() {
             View selected work
             <ArrowDown className="w-[15px] h-[15px] transition-transform group-hover:translate-y-0.5" />
           </a>
-          <a href="https://drive.google.com/file/d/1U6BuS9iUB3ddrEi_OiM089QFxjuxQr_j/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, fontWeight: 500 }}>
+          <a href="https://drive.google.com/file/d/1FDalx68OAXVxKKRHOrBG5VAGMag4lqPO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, fontWeight: 500 }}>
             <Download className="w-[15px] h-[15px]" />
             Download Resume
           </a>
