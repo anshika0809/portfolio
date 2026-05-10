@@ -8,6 +8,8 @@ export type CaseStudy = {
   duration: string;
   tags: string[];
   cover: string;
+  coverPosition?: string;
+  coverScale?: number;
   gallery: string[];
   gradient: string;
   span: string;
@@ -26,12 +28,14 @@ export const caseStudies: CaseStudy[] = [
     title: "Avyro",
     link: "https://www.linkedin.com/in/anshika-agrawal-b473a521b",
     oneLiner:
-      "Led end-to-end UI/UX design for Avyro, a workforce operating system built to streamline how organizations manage people, projects, and processes.",
+      "Designed the unified product experience for Avyro, an AEC-focused operations platform built to bring clients, projects, work, finances, HRMS, billing, and timesheets into one system.",
     year: "2025",
     role: "Product UI Designer",
     duration: "May 2025 — Present",
     tags: ["SaaS", "Workforce OS", "0->1"],
     cover: "/avyro-cover.png",
+    coverPosition: "center 35%",
+    coverScale: 1.18,
     gallery: [
       "/avyro-cover.png",
       // "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
@@ -39,7 +43,7 @@ export const caseStudies: CaseStudy[] = [
     gradient: "from-blue-500/25 via-sky-400/10 to-transparent",
     span: "md:col-span-7",
     overview:
-      "Led end-to-end UI/UX design for Avyro, a workforce operating system built to streamline how organizations manage people, projects, and processes. Responsible for the full design lifecycle - from early user flows and wireframes to polished, production-ready high-fidelity interfaces - while working closely with product, engineering, and business stakeholders.",
+      "AEC companies often manage clients, projects, work tracking, finances, HRMS, billing, and timesheets across disconnected tools, making daily operations fragmented and difficult to oversee. Leadership also lacks a single place to monitor performance, progress, and reporting across the business. Avyro is being built to solve that gap through one unified platform that helps teams work more efficiently while giving management a centralized dashboard to track operations, data, and decisions in one place.",
     scope: [
       { label: "Role", value: "End-to-end UI/UX design" },
       { label: "Platform", value: "SaaS workforce OS" },
@@ -48,24 +52,24 @@ export const caseStudies: CaseStudy[] = [
     ],
     approach: [
       {
-        title: "E2E design ownership",
-        body: "Owned core product design from early flows and journey maps through polished high-fidelity interfaces for workforce modules.",
+        title: "Core operations in one system",
+        body: "Designed unified product flows for clients, projects, work tracking, billing, finances, HRMS, and timesheets so teams no longer have to switch between disconnected tools.",
       },
       {
-        title: "Cross-functional collaboration",
-        body: "Worked closely with product, engineering, and business teams to keep designs practical, scalable, and ready for development handoff.",
+        title: "Dashboard for management visibility",
+        body: "Created dashboard and reporting experiences that help management view business performance, project progress, and operational data from one central place.",
       },
       {
-        title: "0->1 product building",
-        body: "Iterated feature designs based on product feedback and usability testing while shaping a design system for long-term scalability.",
+        title: "AEC-specific workflow foundation",
+        body: "Shaped a scalable 0 to 1 product foundation with interfaces tailored to how AEC teams coordinate work, manage operations, and make decisions across departments.",
       },
     ],
     insights: [
-      "User research, flows, and journey maps for core workforce modules.",
-      "Low and mid-fidelity wireframes for rapid iteration and stakeholder alignment.",
-      "High-fidelity UI with design system components for scalability.",
-      "Cross-functional collaboration with engineering for dev-ready handoffs.",
-      "Iterative feature design based on product feedback and usability testing.",
+      "Mapped fragmented AEC workflows into one connected product experience across operations, finance, and people management.",
+      "Designed unified flows for clients, projects, work management, billing, HRMS, and timesheets.",
+      "Created dashboards that help management view business data and reporting in one place.",
+      "Built low to high-fidelity product UI in collaboration with product and engineering teams.",
+      "Shaped the platform with scalability in mind so new modules can fit into the same system over time.",
     ],
     outcomes: [
       { value: "E2E", label: "Design ownership" },
@@ -92,7 +96,7 @@ export const caseStudies: CaseStudy[] = [
     gradient: "from-violet-500/25 via-indigo-400/10 to-transparent",
     span: "md:col-span-5",
     overview:
-      "Designed and developed the full marketing and lead-generation website for SAPS India (Skills and Placement Services), a professional staffing and recruitment agency operating under the RegisterKaro brand. The platform positions SAPS India as a trusted hiring partner for businesses and job seekers across 12+ industry verticals, driving enquiries for permanent staffing, executive search, CXO hiring, and HR consulting.",
+      "SAPS India needed a stronger digital presence that could quickly build trust, explain multiple staffing services clearly, and convert visitors into qualified enquiries. The business challenge was that the offering spanned employers, job seekers, and 12+ industry verticals, which could easily feel scattered or overwhelming on a landing page. The website had to make the brand feel credible, structured, and conversion-ready from the first scroll.",
     scope: [
       { label: "Role", value: "UI/UX Design + Web Development" },
       { label: "Platform", value: "Responsive web" },
@@ -101,16 +105,16 @@ export const caseStudies: CaseStudy[] = [
     ],
     approach: [
       {
-        title: "Trust-first landing experience",
-        body: "Designed a conversion-focused hero with an enquiry form and animated trust-metric counters so visitors immediately understood SAPS India's credibility and service range.",
+        title: "Hero section with trust and enquiry",
+        body: "Designed a landing hero with a clear value proposition, enquiry form, and trust metrics so users immediately understand the brand and know what action to take.",
       },
       {
-        title: "Complex services, made scannable",
-        body: "Structured the site around staffing categories, industry sectors, client logos, and reviews so both employers and job seekers could quickly find relevance without friction.",
+        title: "Service and sector sections made scannable",
+        body: "Organized staffing categories, industry verticals, and core offerings into clear sections so employers and job seekers can quickly find the services relevant to them.",
       },
       {
-        title: "Lead-gen with depth",
-        body: "Balanced conversion design with informative content through service cards, sector accordions, blogs, and a structured footer that supports deeper exploration.",
+        title: "Proof, content, and conversion layers",
+        body: "Added client logos, reviews, blogs, and structured footer content to strengthen credibility while supporting deeper exploration beyond the main CTA.",
       },
     ],
     insights: [
@@ -124,7 +128,7 @@ export const caseStudies: CaseStudy[] = [
       { value: "99%", label: "Client retention" },
     ],
   },
-  {
+  /* {
     slug: "decor-delights",
     client: "Decor Delights",
     link: "https://drive.google.com/file/d/17lPgYL8aZ4JfV22YfzsaWgzv9pMnUlC6/view",
@@ -177,27 +181,29 @@ export const caseStudies: CaseStudy[] = [
       { value: "3D", label: "Design delivery" },
       { value: "24x7", label: "Post-project support" },
     ],
-  },
+  }, */
   {
     slug: "woods91",
     client: "Woods91",
     title: "Woods91",
     link: "https://drive.google.com/file/d/1fwfd6HrIvc5bgowPw7WA4pCsSBzYKjlO/view?usp=sharing",
     oneLiner:
-      "Designed and developed the end-to-end digital presence for Woods91, a real estate platform focused on Dholera Smart City.",
+      "Designed and developed the digital experience for Woods91, a real estate platform that helps buyers and investors discover, evaluate, and enquire about property opportunities with more clarity and trust.",
     year: "2024",
     role: "UI/UX Designer & Web Developer",
     duration: "Freelance Project",
     tags: ["Real Estate", "PropTech", "Web UI"],
     cover: "/woods91-cover.png",
+    coverPosition: "center center",
+    coverScale: 1.08,
     gallery: [
       "/woods91-cover.png",
       // "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     ],
     gradient: "from-emerald-500/25 via-teal-400/10 to-transparent",
-    span: "md:col-span-7",
+    span: "md:col-span-5",
     overview:
-      "Designed and developed the end-to-end digital presence for Woods91, a real estate platform focused on Dholera Smart City - India's first greenfield smart city. The product helps investors and homebuyers discover, compare, and transact properties across emerging high-growth markets in NCR and Gujarat.",
+      "Real estate buyers and investors often face scattered information, low trust, and a high-friction decision-making process when exploring emerging markets. Woods91 needed a digital experience that could present opportunities clearly, build confidence quickly, and guide users from discovery to enquiry. The challenge was to make a complex property-buying journey feel credible, structured, and easy to navigate across high-growth markets like Dholera, NCR, and Gujarat.",
     scope: [
       { label: "Role", value: "UI/UX Design + Web Development" },
       { label: "Platform", value: "Responsive web" },
@@ -206,24 +212,24 @@ export const caseStudies: CaseStudy[] = [
     ],
     approach: [
       {
-        title: "Property discovery flow",
-        body: "Designed full website UI for property search, filters, and listings so investors and homebuyers could scan opportunities quickly.",
+        title: "Hero and property discovery section",
+        body: "Structured the landing experience around a clear hero, property search, and listing previews so buyers and investors can start exploring opportunities with clarity.",
       },
       {
-        title: "Guided buying journey",
-        body: "Created a 3-step homebuying funnel with guided consultation flow to reduce decision friction for high-intent users.",
+        title: "Consultation and buying journey",
+        body: "Built a more guided path from browsing to consultation so high-intent users can move from interest to enquiry with less friction and more confidence.",
       },
       {
-        title: "Trust and content system",
-        body: "Built sections for amenities, FAQs, testimonials, news, articles, newsletter subscription, and a multi-location footer system.",
+        title: "Trust-building landing page sections",
+        body: "Used amenities, testimonials, FAQs, articles, and location-specific content sections to make the website feel more informative, trustworthy, and decision-friendly.",
       },
     ],
     insights: [
-      "Full website UI - hero, property search, filters, and listings.",
-      "3-step homebuying funnel with guided consultation flow.",
-      "Amenities showcase, FAQ accordion, and testimonials section.",
-      "News and articles layout for Dholera investment content.",
-      "Newsletter subscription and multi-location footer system.",
+      "Structured complex real estate information into a more guided discovery experience.",
+      "Used listings, filters, and consultation touchpoints to reduce friction in decision-making.",
+      "Added trust-building content like testimonials, FAQs, and amenities to strengthen credibility.",
+      "Created editorial and informational sections to support market education around Dholera and other growth locations.",
+      "Balanced lead generation with content depth so users could explore before enquiring.",
     ],
     outcomes: [
       { value: "8K+", label: "Happy customers" },
@@ -237,7 +243,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Healthcare Web Platform",
     link: "https://anshika0809.github.io/Healthcare",
     oneLiner:
-      "Built a responsive healthcare web platform designed to help users take charge of their personal wellness through BMI calculation, personalised diet planning, and guided yoga routines.",
+      "Built a responsive wellness platform that helps users turn basic health inputs into personalized guidance through BMI tracking, diet planning, and yoga recommendations.",
     year: "2022",
     role: "Frontend Developer & UI/UX Designer",
     duration: "Jan 2022 - Feb 2022",
@@ -247,7 +253,7 @@ export const caseStudies: CaseStudy[] = [
     gradient: "from-rose-500/20 via-sky-400/10 to-transparent",
     span: "md:col-span-7",
     overview:
-      "Built a responsive healthcare web platform designed to help users take charge of their personal wellness. The site provides a structured, step-by-step journey - calculate your BMI, receive a personalised diet plan based on the result, and explore suitable yoga asanas and exercises - making health guidance interactive, accessible, and actionable for everyday users.",
+      "Health and wellness guidance can often feel generic, confusing, or difficult to act on for everyday users. This platform needed a simple digital experience that could turn basic health inputs into clear, personalized next steps. The challenge was to make BMI tracking, diet planning, and yoga guidance feel interactive, approachable, and useful in one guided journey.",
     scope: [
       { label: "Role", value: "Frontend Development + UI/UX Design" },
       { label: "Platform", value: "Responsive multi-page website" },
@@ -256,25 +262,25 @@ export const caseStudies: CaseStudy[] = [
     ],
     approach: [
       {
-        title: "BMI-first guided flow",
-        body: "Designed the experience as a simple user journey where BMI calculation acts as the entry point to more personalised wellness guidance.",
+        title: "Hero to BMI entry flow",
+        body: "Structured the experience so users are first introduced to the platform clearly, then guided into BMI calculation as the main starting point for personalized wellness support.",
       },
       {
-        title: "Interactive health tools",
-        body: "Built practical modules for BMI calculation, diet chart generation, and yoga exploration so users could act on their health information immediately.",
+        title: "Diet and yoga guidance sections",
+        body: "Connected BMI results to diet planning and yoga recommendation sections so users can move from information to practical next steps in one continuous journey.",
       },
       {
-        title: "Responsive multi-page system",
-        body: "Structured the platform across clear sections for services, team, contact, and footer navigation while keeping the interface readable across devices.",
+        title: "Supporting sections and responsive flow",
+        body: "Used clear supporting sections, simple navigation, and responsive layouts to keep the platform approachable and easy to follow across different devices.",
       },
     ],
     insights: [
-      "BMI Calculator with real-time output and category classification.",
-      "Diet Chart Maker with personalised plans across 4 BMI categories.",
-      "Yoga and exercise guidance matched to user body type.",
-      "Schedule-maker flow guiding users from BMI to diet to exercise in sequence.",
-      "Responsive multi-page website with smooth in-page navigation.",
-      "Team section, contact form, and structured footer with service links.",
+      "Turned generic wellness browsing into a more guided and actionable user journey.",
+      "Used BMI as a simple entry point to personalize diet and yoga recommendations.",
+      "Combined multiple wellness tools into one connected experience instead of isolated pages.",
+      "Kept the interface lightweight and easy to understand for everyday users with different health-awareness levels.",
+      "Designed the platform responsively so the journey remains clear across screen sizes.",
+      "Supported usability with clean navigation, supporting sections, and clear content grouping.",
     ],
     outcomes: [
       { value: "BMI", label: "Interactive calculator" },
@@ -282,7 +288,7 @@ export const caseStudies: CaseStudy[] = [
       { value: "Yoga", label: "Body-type guidance" },
     ],
   },
-  {
+  /* {
     slug: "rehwasi-society",
     client: "Rehwasi Society",
     title: "Rehwasi Society",
@@ -330,5 +336,5 @@ export const caseStudies: CaseStudy[] = [
       { value: "6", label: "Primary nav sections" },
       { value: "Hero", label: "Led storytelling" },
     ],
-  },
+  }, */
 ];

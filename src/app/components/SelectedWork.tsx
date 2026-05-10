@@ -5,7 +5,7 @@ import { caseStudies, CaseStudy } from "./caseStudiesData";
 export function SelectedWork({ onOpen }: { onOpen: (cs: CaseStudy) => void }) {
   return (
     <section id="work" className="py-36 border-t border-white/5">
-      <div className="max-w-5xl mx-auto px-6 lg:px-10">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="mb-16">
           <div className="text-white/35 mb-4 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
             Selected Work
@@ -29,12 +29,20 @@ export function SelectedWork({ onOpen }: { onOpen: (cs: CaseStudy) => void }) {
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-[#0c0c10]">
                 <motion.div
-                  className="absolute inset-0 bg-cover bg-top bg-no-repeat transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
                   transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                  style={{ backgroundImage: `url(${cs.cover})` }}
-                  role="img"
-                  aria-label={cs.title}
-                />
+                >
+                  <img
+                    src={cs.cover}
+                    alt={cs.title}
+                    className="w-full h-full object-cover"
+                    style={{
+                      objectPosition: cs.coverPosition ?? "center top",
+                      transform: `scale(${cs.coverScale ?? 1})`,
+                      transformOrigin: cs.coverPosition ?? "center top",
+                    }}
+                  />
+                </motion.div>
                 <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-30`} />
 
                 <div className="absolute top-5 left-5 right-5 flex items-start justify-between">

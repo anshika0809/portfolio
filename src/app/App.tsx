@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen bg-[#0a0a0c] text-white antialiased selection:bg-violet-400/40 selection:text-white"
+      className="min-h-screen overflow-x-hidden bg-[#0a0a0c] text-white antialiased selection:bg-violet-400/40 selection:text-white"
       style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
     >
       <PageLoader />

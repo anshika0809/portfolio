@@ -126,6 +126,8 @@
 
   body {
     @apply bg-background text-foreground;
+    background-color: #0a0a0c;
+    overflow-x: hidden;
   }
 
   /**
@@ -135,6 +137,9 @@
 
   html {
     font-size: var(--font-size);
+    background-color: #0a0a0c;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
   }
 
   h1 {

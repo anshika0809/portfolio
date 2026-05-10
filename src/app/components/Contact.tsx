@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Contact() {
   return (
     <section id="contact" className="py-36 border-t border-white/5">
-      <div className="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 text-center">
         <div className="text-white/35 mb-5 text-xs tracking-wider uppercase" style={{ fontFamily: "DM Sans, sans-serif", letterSpacing: "0.12em", fontWeight: 500 }}>
           Let's Work Together
         </div>
@@ -24,9 +24,8 @@ export function Contact() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5">
-          <a href="https://www.linkedin.com/in/anshika-agrawal-b473a521b/" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black hover:bg-white/90 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500 }}>
+          <a href="https://www.linkedin.com/in/anshika-agrawal-b473a521b/" target="_blank" rel="noreferrer" className="inline-flex items-center px-6 py-3 rounded-full bg-white text-black hover:bg-white/90 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500 }}>
             Message me on LinkedIn
-            <ArrowUpRight className="w-[15px] h-[15px] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>
           <a href="mailto:anshikaagrawalwork08@gmail.com" className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white/75 hover:bg-white/[0.04] hover:text-white hover:border-white/25 transition" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14, fontWeight: 500 }}>
             <Mail className="w-[15px] h-[15px]" />

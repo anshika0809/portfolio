@@ -53,7 +53,12 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 <img
                   src={cs.cover}
                   alt={cs.title}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
+                  style={{
+                    objectPosition: cs.coverPosition ?? "center top",
+                    transform: `scale(${cs.coverScale ?? 1})`,
+                    transformOrigin: cs.coverPosition ?? "center top",
+                  }}
                 />
               </motion.div>
               <div className={`absolute inset-0 bg-gradient-to-tr ${cs.gradient} pointer-events-none opacity-30`} />
@@ -98,11 +103,11 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 </div>
               </Reveal>
 
-              <Section label="01" title="Overview">
+              <Section label="01" title="Business Problem">
                 <p className="text-white/70 max-w-3xl leading-relaxed" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.75 }}>{cs.overview}</p>
               </Section>
 
-              <Section label="02" title="Approach">
+              <Section label="02" title="What We Solved">
                 <div className="grid md:grid-cols-3 gap-5">
                   {cs.approach.map((p, i) => (
                     <motion.div
@@ -173,10 +178,10 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                       transition={{ duration: 0.5, delay: i * 0.08 }}
                       className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent p-7"
                     >
-                      <div className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: 36, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1 }}>
+                      <div className="text-white" style={{ fontFamily: "Sora, sans-serif", fontSize: 30, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1 }}>
                         {m.value}
                       </div>
-                      <div className="text-white/60 mt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.6 }}>{m.label}</div>
+                      <div className="text-white/60 mt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14.5, lineHeight: 1.6 }}>{m.label}</div>
                     </motion.div>
                   ))}
                 </div>
