@@ -12,12 +12,12 @@ const capabilities = [
 
 const tools = [
   { name: "Figma", color: "#0ACF83" },
-  { name: "Stitch", color: "#6366F1" },
-  { name: "Adobe XD", color: "#FF61F6" },
-  { name: "Framer", color: "#0055FF" },
+  { name: "Canva", color: "#6366F1" },
+  { name: "Adobe Illustrator", color: "#FF61F6" },
+  { name: "Microsoft Office", color: "#0055FF" },
   { name: "WordPress", color: "#8B5CF6" },
-  // { name: "Emergent", color: "#10B981" },
-  // { name: "Midjourney", color: "#F59E0B" },
+  { name: "Power BI", color: "#10B981" },
+  { name: "Claude", color: "#F59E0B" },
 ];
 
 export function Skills() {
