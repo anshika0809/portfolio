@@ -125,7 +125,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     outcomes: [
       { value: "Wireframes", label: "Lo-fi to hi-fi flows" },
-      { value: "UI Screens", label: "Final visual design" },
+      { value: "UI/UX", label: "Final visual design" },
       { value: "Responsive", label: "Mobile + Desktop" },
     ],
   },
