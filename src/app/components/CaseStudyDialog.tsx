@@ -187,8 +187,8 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 </div>
               </Section>
 
-              <a href={cs.link} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, fontWeight: 500 }}>
-                {cs.slug === "avyro" ? "Message me on LinkedIn" : "Read case study"}
+              <a href={cs.slug === "avyro" ? "https://www.linkedin.com/in/anshika-agrawal-b473a521b" : cs.link} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, fontWeight: 500 }}>
+                {cs.slug === "avyro" ? "Message me on LinkedIn" : ""}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
