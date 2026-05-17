@@ -124,8 +124,8 @@ export const caseStudies: CaseStudy[] = [
       "Designing for two audiences — employers and job seekers — required clear visual separation without splitting the page into two different experiences.",
     ],
     outcomes: [
-      { value: "Wireframes", label: "Lo-fi to hi-fi flows" },
-      { value: "UI/UX", label: "Final visual design" },
+      { value: "Enquiry", label: "Conversion-first design" },
+      { value: "12+", label: "Verticals" },
       { value: "Responsive", label: "Mobile + Desktop" },
     ],
   },
