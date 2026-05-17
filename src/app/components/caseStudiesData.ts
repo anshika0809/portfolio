@@ -48,7 +48,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Role", value: "End-to-end UI/UX design" },
       { label: "Platform", value: "SaaS workforce OS" },
       { label: "Focus", value: "User flows, wireframes, hi-fi UI" },
-      { label: "Live Site", value: "avyro.in" },
+      { label: "Live Site", value: "avyro.io" },
     ],
     approach: [
       {
@@ -80,9 +80,9 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "registerkaro",
     client: "SAPS India",
-    title: "RegisterKaro - SAPS India",
+    title: "RegisterKaro — SAPS India",
     oneLiner:
-      "Designed and developed the full marketing and lead-generation website for SAPS India (Skills and Placement Services), a professional staffing and recruitment agency operating under the RegisterKaro brand.",
+      "Designed and developed the full marketing and lead-generation website for SAPS India, a professional staffing and recruitment agency operating under the RegisterKaro brand.",
     year: "2024",
     role: "UI/UX Designer & Web Developer",
     link: "https://drive.google.com/file/d/1zCxmMCFIfeVsDj1bBXoFDcjz1eEW-6Tn/view?usp=sharing",
@@ -96,7 +96,7 @@ export const caseStudies: CaseStudy[] = [
     gradient: "from-violet-500/25 via-indigo-400/10 to-transparent",
     span: "md:col-span-5",
     overview:
-      "SAPS India needed a stronger digital presence that could quickly build trust, explain multiple staffing services clearly, and convert visitors into qualified enquiries. The business challenge was that the offering spanned employers, job seekers, and 12+ industry verticals, which could easily feel scattered or overwhelming on a landing page. The website had to make the brand feel credible, structured, and conversion-ready from the first scroll.",
+      "SAPS India needed a stronger digital presence that could quickly build trust, explain multiple staffing services clearly, and convert visitors into qualified enquiries. The offering spanned employers, job seekers, and 12+ industry verticals — which could easily feel scattered on a single page. The website had to make the brand feel credible, structured, and conversion-ready from the first scroll.",
     scope: [
       { label: "Role", value: "UI/UX Design + Web Development" },
       { label: "Platform", value: "Responsive web" },
@@ -110,7 +110,7 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         title: "Service and sector sections made scannable",
-        body: "Organized staffing categories, industry verticals, and core offerings into clear sections so employers and job seekers can quickly find the services relevant to them.",
+        body: "Organised staffing categories, industry verticals, and core offerings into clear sections so employers and job seekers can quickly find the services relevant to them.",
       },
       {
         title: "Proof, content, and conversion layers",
@@ -118,9 +118,10 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     insights: [
-      "Trust metrics and recognizable client logos helped the brand feel established much faster.",
+      "Trust metrics and recognisable client logos helped the brand feel established much faster.",
       "Breaking 12+ verticals into an accordion kept the page informative without overwhelming users.",
       "A strong enquiry path worked best when supported by reviews, blogs, and service clarity rather than a single CTA.",
+      "Designing for two audiences — employers and job seekers — required clear visual separation without splitting the page into two different experiences.",
     ],
     outcomes: [
       { value: "1,000+", label: "Positions filled" },
@@ -232,16 +233,16 @@ export const caseStudies: CaseStudy[] = [
       "Balanced lead generation with content depth so users could explore before enquiring.",
     ],
     outcomes: [
-      { value: "8K+", label: "Happy customers" },
-      { value: "500+", label: "Properties listed" },
-      { value: "680", label: "Awards won" },
+      { value: "Guided", label: "Discovery experience" },
+      { value: "Trusted", label: "Property exploration" },
+      { value: "Conversion", label: "Enquiry-ready design" },
     ],
   },
   {
     slug: "healthcare-website",
     client: "Healthcare",
     title: "Healthcare Web Platform",
-    link: "https://anshika0809.github.io/Healthcare",
+    link: "anshika0809.github.io/Healthcare",
     oneLiner:
       "Built a responsive wellness platform that helps users turn basic health inputs into personalized guidance through BMI tracking, diet planning, and yoga recommendations.",
     year: "2022",
@@ -258,7 +259,10 @@ export const caseStudies: CaseStudy[] = [
       { label: "Role", value: "Frontend Development + UI/UX Design" },
       { label: "Platform", value: "Responsive multi-page website" },
       { label: "Focus", value: "Wellness and nutrition tools" },
-      { label: "Live Site", value: "anshika0809.github.io/Healthcare" },
+      {
+        label: "Live Site",
+        value: "Healthcare: https://anshika0809.github.io/Healthcare",
+      },
     ],
     approach: [
       {
