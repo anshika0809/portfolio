@@ -98,10 +98,10 @@ export const caseStudies: CaseStudy[] = [
     overview:
       "SAPS India needed a stronger digital presence that could quickly build trust, explain multiple staffing services clearly, and convert visitors into qualified enquiries. The offering spanned employers, job seekers, and 12+ industry verticals — which could easily feel scattered on a single page. The website had to make the brand feel credible, structured, and conversion-ready from the first scroll.",
     scope: [
-      { label: "Role", value: "UI/UX Design + Web Development" },
+      { label: "Role", value: "UI/UX Design" },
       { label: "Platform", value: "Responsive web" },
       { label: "Focus", value: "B2B lead generation, trust building" },
-      { label: "Live Site", value: "sapsindia.com" },
+      { label: "Live Site", value: "www.registerkaro.in/" },
     ],
     approach: [
       {
@@ -124,9 +124,9 @@ export const caseStudies: CaseStudy[] = [
       "Designing for two audiences — employers and job seekers — required clear visual separation without splitting the page into two different experiences.",
     ],
     outcomes: [
-      { value: "1,000+", label: "Positions filled" },
-      { value: "11+", label: "Years of experience" },
-      { value: "99%", label: "Client retention" },
+      { value: "Wireframes", label: "Lo-fi to hi-fi flows" },
+      { value: "UI Screens", label: "Final visual design" },
+      { value: "Responsive", label: "Mobile + Desktop" },
     ],
   },
   /* {
@@ -206,7 +206,7 @@ export const caseStudies: CaseStudy[] = [
     overview:
       "Real estate buyers and investors often face scattered information, low trust, and a high-friction decision-making process when exploring emerging markets. Woods91 needed a digital experience that could present opportunities clearly, build confidence quickly, and guide users from discovery to enquiry. The challenge was to make a complex property-buying journey feel credible, structured, and easy to navigate across high-growth markets like Dholera, NCR, and Gujarat.",
     scope: [
-      { label: "Role", value: "UI/UX Design + Web Development" },
+      { label: "Role", value: "UI/UX Design" },
       { label: "Platform", value: "Responsive web" },
       { label: "Focus", value: "Real estate, PropTech" },
       { label: "Live Site", value: "woods91.com" },
