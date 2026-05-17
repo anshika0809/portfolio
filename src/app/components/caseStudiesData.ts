@@ -101,7 +101,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Role", value: "UI/UX Design" },
       { label: "Platform", value: "Responsive web" },
       { label: "Focus", value: "B2B lead generation, trust building" },
-      { label: "Live Site", value: "www.registerkaro.in/" },
+      { label: "Live Site", value: "www.registerkaro.in" },
     ],
     approach: [
       {
@@ -242,7 +242,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "healthcare-website",
     client: "Healthcare",
     title: "Healthcare Web Platform",
-    link: "anshika0809.github.io/Healthcare",
+    link: "https://anshika0809.github.io/Healthcare",
     oneLiner:
       "Built a responsive wellness platform that helps users turn basic health inputs into personalized guidance through BMI tracking, diet planning, and yoga recommendations.",
     year: "2022",
@@ -261,7 +261,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Focus", value: "Wellness and nutrition tools" },
       {
         label: "Live Site",
-        value: "Healthcare: https://anshika0809.github.io/Healthcare",
+        value: "anshika0809.github.io/Healthcare",
       },
     ],
     approach: [
