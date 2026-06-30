@@ -70,13 +70,13 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="absolute bottom-8 left-6 right-6 lg:bottom-12 lg:left-10 lg:right-10"
               >
-                <div className="flex items-center gap-2 text-white/70 mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14 }}>
+                {/* <div className="flex items-center gap-2 text-white/70 mb-4" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 14 }}>
                   <span>{cs.year}</span>
                   <span className="text-white/30">·</span>
                   <span>{cs.client}</span>
                   <span className="text-white/30">·</span>
                   <span>{cs.role}</span>
-                </div>
+                </div> */}
                 <h2 className="text-white tracking-tight max-w-3xl" style={{ fontFamily: "Sora, sans-serif", fontSize: "clamp(32px, 4.5vw, 44px)", lineHeight: 1.1, fontWeight: 600, letterSpacing: "-0.02em" }}>
                   {cs.title}
                 </h2>

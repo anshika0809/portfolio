@@ -85,7 +85,7 @@ export const caseStudies: CaseStudy[] = [
     cover: "/BSC-LandingPage.png",
     coverPosition: "center left",
     coverScale: 1.05,
-    gallery: ["/BSC-LandingPage"],
+    gallery: ["/BSC-LandingPage.png"],
     gradient: "from-amber-700/20 via-amber-500/8 to-transparent",
     span: "md:col-span-5",
     overview:
