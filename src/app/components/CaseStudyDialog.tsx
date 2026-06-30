@@ -93,7 +93,7 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
 
               {/* Scope strip */}
               <Reveal>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-3">
                   {cs.scope.map((s) => (
                     <div key={s.label} className="px-4 py-4 rounded-xl">
                       <div className="text-white/40" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 12 }}>{s.label}</div>
@@ -187,8 +187,24 @@ export function CaseStudyDialog({ cs, onClose }: { cs: CaseStudy | null; onClose
                 </div>
               </Section>
 
-              <a href={cs.slug === "avyro" ? "https://www.linkedin.com/in/anshika-agrawal-b473a521b" : cs.link} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-2" style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, fontWeight: 500 }}>
-                {cs.slug === "avyro" ? "Message me on LinkedIn" : "View detailed work"}
+              <a
+                href={
+                  cs.slug === "magicgrab"
+                    ? "https://drive.google.com/file/d/1pH4aEzR_bM5hYNmInxFiq-Z27K7oUaHj/view?usp=sharing"
+                    : cs.slug === "bsc"
+                      ? "https://drive.google.com/file/d/1B0kjVnv9sj9KF_r5Y7cR0h2t3wF6hhmI/view?usp=sharing"
+                      : cs.slug === "makemytrip"
+                        ? "https://drive.google.com/file/d/1r2cOd5fHwznpxZpE8Qu8F-fUBdtiT_q0/view?usp=sharing"
+                        : cs.slug === "avyro"
+                          ? "https://www.linkedin.com/in/anshika-agrawal-b473a521b"
+                          : cs.link
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition pt-2"
+                style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, fontWeight: 500 }}
+              >
+                {cs.slug === "avyro" ? "Message me on LinkedIn" : cs.slug === "magicgrab" ? "View detailed work" : cs.slug === "bsc" ? "View detailed work" : cs.slug === "makemytrip" ? "View detailed work" : "View detailed work"}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>

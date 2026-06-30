@@ -4,7 +4,7 @@ const roles = [
   {
     co: "AVYRO",
     role: "Product UI Designer",
-    period: "May 2025 — Present",
+    period: "May 2025 — May 2026",
     location: "Gurgaon, Haryana",
     responsibilities: [
       "Leading end-to-end UI/UX for a B2B industrial workforce platform serving factory supervisors and field crews",
