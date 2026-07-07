@@ -22,7 +22,7 @@ export function About() {
           style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.75 }}
         >
           <p>
-            I'm a Product UI Designer based in Gwalior, with over a year and a half designing for <span className="text-white" style={{ fontWeight: 500 }}>fintech, healthcare, and SaaS</span> products. I believe good design starts with understanding—not pixels. Before I open Figma, I'm asking questions, mapping flows, testing assumptions.
+            I'm a Product UI Designer based in Gwalior, with 2+ years of experience in designing for <span className="text-white" style={{ fontWeight: 500 }}>fintech, healthcare, and SaaS</span> products. I believe good design starts with understanding—not pixels. Before I open Figma, I'm asking questions, mapping flows, testing assumptions.
           </p>
           <p>
             Right now, I'm leading UI/UX for <span className="text-white" style={{ fontWeight: 500 }}>AVYRO</span>, a B2B industrial workforce platform. I work directly with factory supervisors and field crews to design interfaces that work in real, messy conditions—not just in a prototype.

@@ -56,7 +56,7 @@ export function Hero() {
           className="mt-5 max-w-lg text-white/55 leading-relaxed"
           style={{ fontFamily: "DM Sans, sans-serif", fontSize: 15.5, lineHeight: 1.7 }}
         >
-          Product UI Designer with 1.5+ years of experience designing B2B and B2C products across fintech, healthcare, and SaaS. I focus on user journeys, information architecture, and clean, intuitive interfaces.
+          Product UI Designer with 2+ years of experience designing B2B and B2C products across fintech, healthcare, and SaaS. I focus on user journeys, information architecture, and clean, intuitive interfaces.
         </motion.p>
 
         <motion.div
@@ -82,7 +82,7 @@ export function Hero() {
           className="mt-10 grid grid-cols-3 gap-8 max-w-xl border-t border-white/8 pt-6"
         >
           {[
-            { k: "1.5+", v: "Years of experience" },
+            { k: "2+", v: "Years of experience" },
             { k: "3+", v: "Domains" },
             { k: "6+", v: "Projects completed" },
           ].map((s) => (
