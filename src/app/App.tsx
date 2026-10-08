@@ -67,7 +67,7 @@ function Loader({ onDone }: { onDone: () => void }) {
         transition={{ duration: 0.5, delay: 0.5 }}
         style={{ fontFamily: SANS, fontSize: "0.6rem", color: DIM, letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 400 }}
       >
-        Portfolio · 2026
+        Anshika Agrawal
       </motion.span>
     </motion.div>
   );

@@ -75,14 +75,14 @@ export function HeroSection() {
         {/* Big name */}
         <motion.h1
           initial={{ opacity: 0, y: 36 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.42, ease }}
-          style={{ fontFamily: SERIF, fontSize: "clamp(4.5rem, 14vw, 11rem)", fontWeight: 600, fontStyle: "italic", lineHeight: 0.88, letterSpacing: "-0.015em", color: TEXT, margin: 0 }}
+          style={{ fontFamily: SERIF, fontSize: "clamp(3rem, 12vw, 7rem)", fontWeight: 600, fontStyle: "italic", lineHeight: 0.88, letterSpacing: "-0.015em", color: TEXT, margin: 0 }}
         >
           Anshika
         </motion.h1>
 
         <motion.h1
           initial={{ opacity: 0, y: 36 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.52, ease }}
-          style={{ fontFamily: SERIF, fontSize: "clamp(4.5rem, 14vw, 11rem)", fontWeight: 600, fontStyle: "italic", lineHeight: 0.88, letterSpacing: "-0.015em", color: "rgba(28,26,23,0.12)", margin: "0 0 1.75rem" }}
+          style={{ fontFamily: SERIF, fontSize: "clamp(3rem, 12vw, 7rem)", fontWeight: 600, fontStyle: "italic", lineHeight: 0.88, letterSpacing: "-0.015em", color: "rgba(28,26,23,0.12)", margin: "0 0 1.75rem" }}
         >
           Agrawal
         </motion.h1>
