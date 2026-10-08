@@ -3,7 +3,11 @@ import { motion, AnimatePresence } from "motion/react";
 import { X, ArrowUpRight, Monitor } from "lucide-react";
 import avyroCover from "../../imports/avyro-cover.png";
 import magicPinCover from "../../imports/MagicGrab.png";
-import mmtCover from "../../imports/MMT-Redesign.png";
+import tutedudeHomepage from "../../imports/Tutedude_Homepage.jpeg";
+import tutedudeUserFlow from "../../imports/Tutedude_User Flow_diagram.jpeg";
+import tutedudeCourseView from "../../imports/Tutedude_Course_View.jpeg";
+import tutedudeProgress from "../../imports/Tutedude_course_progress.jpeg";
+import tutedudeCertificates from "../../imports/Tutedude_Certifications.jpeg";
 import workzaCover from "../../imports/Workza_HRMS_-_LOgin.jpeg";
 
 const SERIF = "'Cormorant Garamond', Georgia, serif";
@@ -51,30 +55,30 @@ const projects = [
   {
     id: 2,
     num: "02",
-    title: "MagicPin",
-    company: "MagicPin",
+    title: "Magic Grab",
+    company: "magicpin",
     platform: "Mobile App",
-    tags: ["Hyperlocal", "Consumer App", "Mobile"],
-    year: "2023",
+    tags: ["Consumer App", "Mobile", "Growth / Retention"],
+    year: "2026",
     accent: "#A33D00",
     accentBg: "#FBF0EA",
     image: magicPinCover,
-    driveLink: "https://drive.google.com/file/d/1pH4aEzR_bM5hYNmInxFiq-Z27K7oUaHj/view?usp=sharing" as string | null,
-    brief: "Hyperlocal discovery and offers app for food, lifestyle, and local services. Worked on discovery flows, merchant listing UX, and offers presentation.",
-    role: "UI/UX Design Intern",
-    duration: "2023",
-    overview: "MagicPin is a hyperlocal discovery platform connecting users with local businesses — restaurants, salons, gyms, and retail. Worked on improving key discovery and offers UX flows.",
-    problem: "Users dropped off mid-discovery due to cluttered merchant listing pages and unclear offer redemption flows. The challenge was simplifying without losing the information density merchants needed.",
+    driveLink: "https://drive.google.com/file/d/1q0xUnp72Gc1_CVEky20c88xyaULM4yPL/view?usp=sharing" as string | null,
+    brief: "A group ordering experience where the countdown is the product, and the cashback is the reason you do it again tomorrow.",
+    role: "Self-initiated project",
+    duration: "2026",
+    overview: "Magic Grab is a group ordering concept for magicpin: each member orders independently within a shared time window. There is no shared cart or group payment—just a shared goal, a countdown, and cashback that gives people a reason to return.",
+    problem: "magicpin already offers cashbacks and vouchers, but they can feel transactional: a user claims and redeems alone, with little reason to return the next day. The goal is to grow DAU through a repeatable social mechanic, not a one-time discount event.",
     context: "B2C · Hyperlocal Discovery · Mobile · Consumer App",
-    myRole: "UI/UX Design Intern — focused on discovery flows, merchant listing pages, and offers UX.",
+    myRole: "Product Designer working solo end to end: feature concept, rules and economics, user flows, mobile UI, and edge cases.",
     contributions: [
-      "Redesigned merchant listing cards for better scanability and offer visibility",
-      "Simplified offer redemption flow — reduced steps and improved clarity of terms",
-      "Worked on category and neighbourhood discovery browsing patterns",
-      "Delivered annotated mobile UI screens with component-level specs",
+      "Designed Magic Grab: members order independently within a time window. There is no shared cart or group payment, only a shared goal.",
+      "Defined four group tiers—Duo, Squad, Crew, and Party—with fixed cashback caps.",
+      "Designed creator and joiner flows, from WhatsApp invite through in-app join, plus active ordering and edge cases.",
+      "Built retention loops with a leaderboard, streaks, and ‘Order again with…’ re-entry.",
     ],
-    processNote: "User research → Flow mapping → Wireframes → Hi-fi mobile UI → Handoff",
-    learnings: "Consumer apps at scale demand ruthlessness about information hierarchy. Every element on a listing card competes for attention — removing is almost always the right move.",
+    processNote: "Problem framing → Feature concept → Rules & economics → Flow mapping → Mobile UI → Edge cases",
+    learnings: "Retention comes from a repeatable social mechanic, not a bigger discount. Guardrails such as one group per day and fixed caps are design decisions: they protect the budget and keep the mechanic honest. Knowing what not to build matters as much as what to ship.",
     screenRatio: "9/16",
   },
   {
@@ -90,12 +94,12 @@ const projects = [
     image: avyroCover,
     driveLink: null as string | null,
     brief: "B2B SaaS for industrial companies to digitise field workforce management — task assignment, shift scheduling, compliance workflows. Sole designer for a full year.",
-    role: "Sole Designer",
+    role: "Product UI Designer",
     duration: "May 2025 – May 2026",
     overview: "A B2B platform helping industrial companies digitise and manage their field workforce — task assignment, shift scheduling, compliance documentation, and reporting across complex org structures.",
     problem: "Industrial companies were managing field teams through paper logs, phone calls, and fragmented Excel sheets — zero real-time visibility into task status, shift coverage, or compliance gaps.",
     context: "B2B · Industrial Workforce · Web · SaaS",
-    myRole: "Sole designer for 12 months across the full product lifecycle — from initial research through to shipped features.",
+    myRole: "Product UI designer for 12 months across the full product lifecycle — from initial research through to shipped features.",
     contributions: [
       "Owned the full design lifecycle — research, IA, wireframes, UI, specs, SRS documentation",
       "Worked directly with engineering leads and product managers across multiple sprints",
@@ -110,31 +114,32 @@ const projects = [
   {
     id: 4,
     num: "04",
-    title: "MakeMyTrip",
-    company: "MakeMyTrip",
-    platform: "Web + Mobile",
-    tags: ["Travel", "E-commerce", "Web & Mobile"],
-    year: "2023",
-    accent: "#1A3A5C",
-    accentBg: "#EEF3F8",
-    image: mmtCover,
-    driveLink: "https://drive.google.com/file/d/1r2cOd5fHwznpxZpE8Qu8F-fUBdtiT_q0/view?usp=sharing" as string | null,
-    brief: "Travel booking platform for flights, hotels, and holiday packages. Worked on booking flow UX, trip planning features, and cross-platform responsive design.",
-    role: "UI/UX Design Intern",
-    duration: "2023",
-    overview: "MakeMyTrip is India's leading travel booking platform. Worked on booking flow improvements and trip planning UX across web and mobile during an internship engagement.",
-    problem: "Booking flows had high drop-off at the traveller details and add-ons stage — too many decisions at once, unclear pricing, and inconsistent behaviour between web and mobile.",
-    context: "B2C · Travel · E-commerce · Web & Mobile",
-    myRole: "UI/UX Design Intern — focused on booking flow UX, cross-platform consistency, and trip planning features.",
+    title: "Redesigning the TuteDude Lecture Page",
+    company: "TuteDude",
+    platform: "Mobile Web",
+    tags: ["EdTech", "Mobile Web", "Learning Platform"],
+    year: "2026",
+    accent: "#57288C",
+    accentBg: "#F2ECF8",
+    image: tutedudeHomepage,
+    driveLink: "https://drive.google.com/file/d/1Q4YeOkVn6-b-shet8GXiyL1Ti12G6i0p/view?usp=sharing" as string | null,
+    brief: "A cluttered lecture page rebuilt so learners can find what matters, using better placement and clearer wording within TuteDude's existing design system.",
+    role: "Self-initiated project",
+    duration: "Mobile Web · 360px screen",
+    overview: "A self-initiated redesign concept, not work for a company. I reviewed 14 usability problems, prioritised the 9 with the greatest impact on learner trust and business outcomes, and designed fixes for a 360px mobile web screen. All design work is mine: prioritisation, placement and wording decisions, mobile UI, and prototype.",
+    problem: "Learners primarily use budget Android phones and are not highly experienced with digital products. The lecture page felt cluttered, and important elements were hard to locate. I identified 14 problems in total.",
+    context: "B2C · EdTech · Mobile Web · Budget Android Users",
+    myRole: "Solo designer on this concept project: problem prioritisation, placement and wording, mobile UI, and interactive prototype.",
     contributions: [
-      "Mapped the end-to-end booking flow and identified key drop-off points",
-      "Redesigned traveller details form for clarity and reduced cognitive load",
-      "Worked on cross-platform consistency between web and mobile booking experiences",
-      "Designed trip planning feature wireframes and initial UI explorations",
+      "Resolved 9 of the 14 problems through better placement and clearer wording.",
+      "Gave Certificate & Refund, Notes & Resources, and Support clear, always-reachable places on the lecture page.",
+      "Made progress understandable with a three-bar sheet and an ‘Xh Ym left’ watch-time view.",
+      "Added in-lecture controls: a language toggle and a chapters list with seekbar tick marks.",
+      "Used TuteDude's existing colours and components throughout.",
     ],
-    processNote: "Flow audit → Problem framing → Wireframes → UI explorations → Cross-platform specs",
-    learnings: "High-stakes booking flows require trust-building at every step. Uncertainty about pricing or policy is what kills conversions — clarity always wins.",
-    screenRatio: "16/9",
+    processNote: "Problem prioritisation → Placement and wording fixes → Hi-fi mobile UI → Interactive prototype",
+    learnings: "Most usability problems on a cluttered screen are fixed by moving things and renaming them, not by adding new elements. For first-time digital users, familiar patterns and plain words beat clever icons. Choosing what not to solve matters as much as what to solve.",
+    screenRatio: "9/16",
   },
 ];
 
@@ -149,6 +154,236 @@ function ImgPlaceholder({ label, note, ratio = "16/9" }: { label: string; note?:
       <p style={{ fontFamily: SANS, fontSize: "0.75rem", fontWeight: 500, color: MUTED, margin: 0 }}>{label}</p>
       {note && <p style={{ fontFamily: SANS, fontSize: "0.65rem", color: DIM, margin: 0, fontWeight: 300 }}>{note}</p>}
     </div>
+  );
+}
+
+function MagicGrabDetails() {
+  const sectionStyle = { marginBottom: "2.5rem", borderTop: `1px solid ${BORDER}`, paddingTop: "2rem" };
+  const headingStyle = { fontSize: "0.6rem", color: DIM, fontFamily: SANS, fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase" as const, margin: "0 0 1rem" };
+  const bodyStyle = { fontFamily: SANS, fontSize: "0.84rem", color: MUTED, lineHeight: 1.8, margin: 0, fontWeight: 300 };
+  const links = [
+    { label: "Case study (process doc)", href: "https://drive.google.com/file/d/1q0xUnp72Gc1_CVEky20c88xyaULM4yPL/view?usp=sharing" },
+    { label: "UI screens (PDF)", href: "https://drive.google.com/file/d/1Eba9gpEMuB8IxbijlQuWQRjnYiSTfTqp/view?usp=sharing" },
+    { label: "Prototype (Figma)", href: "https://www.figma.com/proto/NqyBQFbmcBnYkqvMyjmG4z/Magic-Grab--Group-Order-?node-id=23-713&t=mffWHEQVJNpnIHcL-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=23%3A713&show-proto-sidebar=1" },
+  ];
+
+  return (
+    <>
+      <section style={sectionStyle}>
+        <p style={headingStyle}>How It Works</p>
+        <p style={{ ...bodyStyle, marginBottom: "1rem" }}>A user creates a group, chooses a size, and invites friends by shared link or code. The countdown starts when everyone joins. Each person orders from any restaurant at their location and pays separately.</p>
+        <div style={{ overflowX: "auto" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: SANS, fontSize: "0.8rem", color: MUTED, textAlign: "left" }}>
+            <thead><tr>{["Group", "Members", "Cashback per member"].map((item) => <th key={item} style={{ padding: "0.7rem", borderBottom: `1px solid ${BORDER}`, color: TEXT, fontWeight: 500 }}>{item}</th>)}</tr></thead>
+            <tbody>{[["Duo", "2", "25%, up to ₹25"], ["Squad", "4", "10%, up to ₹50"], ["Crew", "8", "15%, up to ₹75"], ["Party", "10", "20%, up to ₹100"]].map((row) => <tr key={row[0]}>{row.map((item) => <td key={item} style={{ padding: "0.7rem", borderBottom: `1px solid ${BORDER}` }}>{item}</td>)}</tr>)}</tbody>
+          </table>
+        </div>
+        <p style={{ ...bodyStyle, marginTop: "1rem" }}>Every group size has a 1.5-hour invite and join window, followed by a 24-hour order window. Cashback requires a minimum cart value of ₹100.</p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>User Flows &amp; IA</p>
+        <p style={{ ...bodyStyle, marginBottom: "1rem" }}>Entry points: push notification, homepage banner (with or without an active group), and My Groups re-entry. Creator flow: size selection → lobby → invite. Joiner flow: WhatsApp preview → web preview → in-app join → confirmation.</p>
+        <ImgPlaceholder label="Magic Grab user flow diagram" note="Entry points → creator → joiner → 24-hour order window → completion" ratio="4/3" />
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Wireframes</p>
+        <ImgPlaceholder label="Low-fidelity wireframes" note="Group size selection, lobby, and completion" ratio="4/3" />
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Final Screens</p>
+        <p style={{ ...bodyStyle, marginBottom: "1rem" }}>Creator: group size selection, forming and active lobbies, and full, partial, or expired completion. Joiner: WhatsApp message preview, non-app web preview with eligibility check, in-app join, and confirmation. Active ordering: persistent countdown, restaurant menu with group context, checkout with “cashback pending,” and a 10-minute warning. My Groups supports ordering again within the same group, which resets each day.</p>
+        <ImgPlaceholder label="Magic Grab mobile app — final UI" note="Final screens are available in the UI screens PDF" ratio="9/16" />
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Key Detail: Rules &amp; Why They Exist</p>
+        <p style={{ ...bodyStyle, marginBottom: "1rem" }}>One group per day is the key guardrail: without it, a user could create multiple groups, stack cashback, and burn budget without adding DAU. The limit resets at midnight IST.</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>Weekly cashback cap per user (configurable, e.g. five events) limits multi-account gaming.</li>
+          <li>₹100 minimum cart value discourages tiny orders designed to game the offer.</li>
+          <li>Fixed tier caps keep the budget predictable.</li>
+          <li>Merchant split: restaurants fund 60–70% of cashback; the platform funds 30–40%.</li>
+        </ul>
+        <p style={{ ...bodyStyle, marginTop: "1rem" }}>Figma prototype includes the detailed callouts and interaction states.</p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Retention: Leaderboard</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>Group total tracks cumulative cashback earned together.</li>
+          <li>Weekly city ranking resets every Monday.</li>
+          <li>Individual streak badge reinforces repeat participation.</li>
+          <li>Completion shows rank movement, e.g. “Your squad moved from #6 to #4 this week.”</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Edge Cases</p>
+        <p style={bodyStyle}>Out-of-delivery-area block, full group, expired join window, partial completion, expired groups, and four push notification variants.</p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Directional Estimates</p>
+        <p style={{ ...bodyStyle, marginBottom: "0.75rem" }}>Directional sizing based on approximately 15M magicpin DAU—not final projections.</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>At 10,000 daily groups, a Squad may bring 1–2 new or lapsed users per session: roughly 3,000–3,500 reactivated DAU.</li>
+          <li>Squad burn: ₹200 per group (₹50 per person, capped); estimated platform share after merchant funding: ₹60–₹80.</li>
+          <li>Directional targets: 35–45% warm-invite conversion and 55–65% return within 48 hours.</li>
+          <li>New-user bonus: flat ₹25 for a first-ever session.</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>How AI Shaped the Solution</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li><strong>Tried:</strong> a gamified group challenge with points, levels, and badges; kept only the leaderboard idea.</li>
+          <li><strong>Kept:</strong> the Magic Grab flow. AI helped surface partial-completion fairness, delivery-area conflicts, expired invite links, and draft push copy, which was rewritten to sound less like a platform alert.</li>
+          <li><strong>Rejected:</strong> a shared group voucher because it does not require individuals to be active, weakening daily habit formation and creating fairness issues.</li>
+          <li><strong>Where AI fell short:</strong> it kept proposing lobby chat, a nearby-groups map, and a five-step tutorial. Those were cut; deciding what not to build remained a design decision.</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Learnings</p>
+        <blockquote style={{ fontFamily: SERIF, fontSize: "clamp(1.1rem, 2vw, 1.45rem)", fontStyle: "italic", color: TEXT, lineHeight: 1.55, margin: 0, borderLeft: `3px solid ${ACCENT}40`, paddingLeft: "1.125rem", fontWeight: 500 }}>
+          Retention comes from a repeatable social mechanic, not a bigger discount. Guardrails such as one group per day and fixed caps are design decisions: they protect the budget and keep the mechanic honest. Knowing what not to build matters as much as what to ship.
+        </blockquote>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Links</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+          {links.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: ACCENT, fontFamily: SANS, fontSize: "0.84rem", textDecoration: "underline", textUnderlineOffset: "3px" }}>{link.label} ↗</a>)}
+        </div>
+      </section>
+    </>
+  );
+}
+
+function TuteDudeDetails() {
+  const sectionStyle = { marginBottom: "2.5rem", borderTop: `1px solid ${BORDER}`, paddingTop: "2rem" };
+  const headingStyle = { fontSize: "0.6rem", color: DIM, fontFamily: SANS, fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase" as const, margin: "0 0 1rem" };
+  const bodyStyle = { fontFamily: SANS, fontSize: "0.84rem", color: MUTED, lineHeight: 1.8, margin: 0, fontWeight: 300 };
+  const tableStyle = { width: "100%", borderCollapse: "collapse" as const, fontFamily: SANS, fontSize: "0.78rem", color: MUTED, textAlign: "left" as const };
+  const cellStyle = { padding: "0.7rem", borderBottom: `1px solid ${BORDER}`, verticalAlign: "top" as const, lineHeight: 1.65 };
+  const problems = [
+    ["P1 · Promo banner hid the course", "Moved the offer below the course card. “Continue Learning” stays first; the offer remains visible without blocking it."],
+    ["P2 · Challenge banner competed for attention", "Changed it to a small strip between modules—still visible, less distracting."],
+    ["P3 · Certificate & Refund was hard to find", "Added a dedicated tab to every lecture page. Refund progress also appears in the top progress badge."],
+    ["P4 · Notes & Resources had no clear place", "Added a Notes & Resources tab within each lecture video, next to course content, so learners need not leave the page."],
+    ["P7 · No way to switch language mid-lecture", "Added a language toggle inside video settings and an active-language strip below the player."],
+    ["P9 · Support wasn't reachable from a lecture", "Added a yellow WhatsApp support banner to every lecture page. Full support and FAQs are under the home screen info icon."],
+    ["P11 · Progress percentage was unclear", "Tapping the top-bar percentage opens a sheet with separate completion, watch-time, and refund-progress bars."],
+    ["P12 · Watch time had no context", "Changed the label to “Xh Ym left.” Tapping opens a detail view showing time remaining to unlock the refund."],
+    ["P13 · No way to jump to a topic", "Added chapter tick marks to the seekbar and a Chapters list with tappable timestamps to jump to a topic."],
+  ];
+  const unaddressed = [
+    ["P14 · Drag-to-preview on seek bar", "Not needed separately: P13's chapter list enables tapping to jump without a risky drag gesture."],
+    ["P5 · Portfolio Builder", "Low-visibility need; skipped for now."],
+    ["P8 · Switch course versions", "Affects very few courses; deprioritised."],
+    ["P6 · Mentorship clarity", "Solved with a clearer button label only; no structural change needed."],
+    ["P10 · Feedback form placement", "Kept the form, but moved it into the Support tab."],
+  ];
+  const links = [
+    { label: "Case study (PDF)", href: "https://drive.google.com/file/d/1Q4YeOkVn6-b-shet8GXiyL1Ti12G6i0p/view?usp=sharing" },
+    { label: "UI screens (PDF)", href: "https://drive.google.com/file/d/1-7KN2QrPtUP2liMoyrNAT4YpfsV2elMq/view?usp=sharing" },
+    { label: "Prototype (Figma)", href: "https://www.figma.com/proto/4uerQn7CtVM3and3wx7q6c/Mobile-Web-UI---Tutedude?node-id=2-3&t=Vj9H2GWqZkAAbHLj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3" },
+  ];
+  const screenshots = [
+    { label: "TuteDude homepage", image: tutedudeHomepage },
+    { label: "Redesigned lecture page", image: tutedudeCourseView },
+    { label: "Progress and watch-time screen", image: tutedudeProgress },
+    { label: "Certificate and refund screen", image: tutedudeCertificates },
+  ];
+
+  return (
+    <>
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Design Process</p>
+        <p style={bodyStyle}>Problem prioritisation → Placement and wording fixes → Hi-fi mobile UI → Interactive prototype</p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Guiding Principles</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>Plain language over icons.</li>
+          <li>Visible controls over hidden gestures.</li>
+          <li>Standard Android patterns—bottom tabs, pull-up sheets, and expandable lists—that learners already know.</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>User Flow</p>
+        <p style={{ ...bodyStyle, marginBottom: "1rem" }}>The home screen leads learners into Continue Learning and then to the lecture page, where support, progress, video controls, course tabs, Notes &amp; Resources, Certificate &amp; Refund, and feedback are easier to reach.</p>
+        <img src={tutedudeUserFlow} alt="TuteDude lecture page redesign user flow diagram" style={{ display: "block", width: "100%", maxHeight: 480, objectFit: "contain", background: "#fff", borderRadius: "0.75rem", border: `1px solid ${BORDER}` }} />
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>The 9 Problems I Worked On</p>
+        <div style={{ overflowX: "auto" }}>
+          <table style={tableStyle}>
+            <thead><tr><th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>Problem</th><th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>How it was resolved</th></tr></thead>
+            <tbody>{problems.map(([problem, resolution]) => <tr key={problem}><td style={{ ...cellStyle, minWidth: 150, color: TEXT }}>{problem}</td><td style={{ ...cellStyle, minWidth: 230 }}>{resolution}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Final Screens · Mobile Web</p>
+        <p style={{ ...bodyStyle, marginBottom: "1rem" }}>Designed for a 360px screen, using TuteDude's existing colours and components.</p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))", gap: "0.875rem", alignItems: "start" }}>
+          {screenshots.map((screen) => (
+            <figure key={screen.label} style={{ margin: 0, padding: "0.75rem", background: "#fff", border: `1px solid ${BORDER}`, borderRadius: "0.75rem" }}>
+              <img src={screen.image} alt={screen.label} style={{ display: "block", width: "100%", height: "auto", borderRadius: "0.4rem" }} />
+              <figcaption style={{ fontFamily: SANS, fontSize: "0.7rem", color: MUTED, marginTop: "0.65rem" }}>{screen.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Key Detail: The Promo Card Trade-off</p>
+        <p style={{ ...bodyStyle, marginBottom: "0.75rem" }}>The tension: hiding the promo card protects the learning experience but costs revenue; keeping it at the top buries course content.</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>Kept the promo card, moved it below the course card, and made it smaller.</li>
+          <li>Learners see their course first; the offer remains visible a short scroll away.</li>
+          <li>Nothing removed—only reordered.</li>
+        </ul>
+        <p style={{ ...bodyStyle, marginTop: "1rem" }}>The before-and-after screens and interaction details are in the case study and Figma prototype.</p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>What I Did Not Address, and Why</p>
+        <div style={{ overflowX: "auto" }}>
+          <table style={tableStyle}>
+            <thead><tr><th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>Problem</th><th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>Why it was left out</th></tr></thead>
+            <tbody>{unaddressed.map(([problem, reason]) => <tr key={problem}><td style={{ ...cellStyle, minWidth: 150, color: TEXT }}>{problem}</td><td style={{ ...cellStyle, minWidth: 230 }}>{reason}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Next Iteration: Discoverability</p>
+        <p style={bodyStyle}>Notes, Resources, and Certificate details are not currently highlighted on the home page; for now, they are reachable through the learner's profile page. A future iteration could add Notes/Resources as a third sub-tab within the main Courses tab, removing the need to go through the profile.</p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Learnings</p>
+        <blockquote style={{ fontFamily: SERIF, fontSize: "clamp(1.1rem, 2vw, 1.45rem)", fontStyle: "italic", color: TEXT, lineHeight: 1.55, margin: 0, borderLeft: `3px solid ${"#57288C"}40`, paddingLeft: "1.125rem", fontWeight: 500 }}>
+          Most usability problems on a cluttered screen are fixed by moving things and renaming them, not by adding new elements. For first-time digital users, familiar patterns and plain words beat clever icons. Choosing what not to solve matters as much as what to solve.
+        </blockquote>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Links</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+          {links.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: "#57288C", fontFamily: SANS, fontSize: "0.84rem", textDecoration: "underline", textUnderlineOffset: "3px" }}>{link.label} ↗</a>)}
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -191,8 +426,8 @@ function CaseStudy({ p, onClose }: { p: typeof projects[0]; onClose: () => void 
         <div style={{ padding: "2.5rem 1.75rem 5rem", flex: 1 }}>
 
           {/* Hero image */}
-          <div style={{ borderRadius: "0.875rem", overflow: "hidden", marginBottom: "2.5rem", position: "relative", aspectRatio: "16/9", width: "100%" }}>
-            <img src={p.image} alt={p.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }} />
+          <div style={{ borderRadius: "0.875rem", overflow: "hidden", marginBottom: "2.5rem", position: "relative", aspectRatio: p.id === 4 ? p.screenRatio : "16/9", width: "100%", maxHeight: p.id === 4 ? 520 : undefined, background: "#fff" }}>
+            <img src={p.image} alt={p.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: p.id === 4 ? "contain" : "cover", objectPosition: "center top" }} />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 60%, rgba(247,245,242,0.15))" }} />
           </div>
 
@@ -204,7 +439,9 @@ function CaseStudy({ p, onClose }: { p: typeof projects[0]; onClose: () => void 
               ))}
             </div>
             <h2 style={{ fontFamily: SERIF, fontSize: "clamp(1.75rem, 4vw, 2.75rem)", fontWeight: 600, fontStyle: "italic", color: TEXT, margin: "0 0 0.4rem", lineHeight: 1.1 }}>{p.title}</h2>
-            <p style={{ color: p.accent, fontSize: "0.8rem", fontFamily: SANS, fontWeight: 500, margin: "0 0 1.25rem", letterSpacing: "0.02em" }}>{p.company} · {p.role} · {p.duration}</p>
+            <p style={{ color: p.accent, fontSize: "0.8rem", fontFamily: SANS, fontWeight: 500, margin: "0 0 1.25rem", letterSpacing: "0.02em" }}>
+              {p.id === 2 ? "magicpin Design Challenge · Self-initiated · 2026 · Concept project, not affiliated with magicpin" : p.id === 4 ? <>Self-initiated project · Mobile Web · 360px screen<br /><span style={{ fontStyle: "italic", fontWeight: 400 }}>Concept project, not affiliated with TuteDude.</span></> : `${p.company} · ${p.role} · ${p.duration}`}
+            </p>
             <p style={{ color: MUTED, fontSize: "0.9rem", lineHeight: 1.82, margin: 0, fontFamily: SANS, fontWeight: 300 }}>{p.overview}</p>
           </div>
 
@@ -272,7 +509,7 @@ function CaseStudy({ p, onClose }: { p: typeof projects[0]; onClose: () => void 
               </div>
             </div>
           )}
-          {hasDriveLink && (
+          {hasDriveLink && (p.id === 2 ? <MagicGrabDetails /> : p.id === 4 ? <TuteDudeDetails /> : (
             <>
               {/* Design Process */}
               <div style={{ marginBottom: "2.5rem", borderTop: `1px solid ${BORDER}`, paddingTop: "2.5rem" }}>
@@ -306,7 +543,7 @@ function CaseStudy({ p, onClose }: { p: typeof projects[0]; onClose: () => void 
                 </div>
               )}
             </>
-          )}
+          ))}
         </div>
       </motion.div>
 
@@ -389,7 +626,7 @@ export function WorkSection() {
             <ProjectCard p={projects[0]} onClick={() => setActive(projects[0])} index={0} />
             <ProjectCard p={projects[1]} onClick={() => setActive(projects[1])} index={1} />
           </div>
-          {/* Row 2: AVYRO + MakeMyTrip */}
+          {/* Row 2: AVYRO + TuteDude */}
           <div className="grid-r2" style={{ height: "clamp(320px, 40vw, 480px)" }}>
             <ProjectCard p={projects[2]} onClick={() => setActive(projects[2])} index={2} />
             <ProjectCard p={projects[3]} onClick={() => setActive(projects[3])} index={3} />
