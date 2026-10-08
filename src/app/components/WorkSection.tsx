@@ -49,7 +49,7 @@ const screenshotCaptionStyle: CSSProperties = {
 };
 
 const RESUME =
-  "https://drive.google.com/file/d/1dCEW10b_KXVrbaGeuQcgkhLOIKRCo8yX/view?usp=sharing";
+  "https://drive.google.com/file/d/1wUBBRWKKRXbSQO4lxn_-IAh9YUpZ58Zy/view?usp=sharing";
 
 function CaseStudyImage({
   src,
@@ -213,7 +213,7 @@ const projects = [
     resources: [
       {
         label: "UI screens (PDF)",
-        href: "https://drive.google.com/file/d/1Eba9gpEMuB8IxbijlQuWQRjnYiSTfTqp/view?usp=sharing",
+        href: "https://drive.google.com/file/d/16Tv4CNBB3Jv0L2Y-UNOrW-z2GzuFOlJM/view?usp=sharing",
       },
       {
         label: "Prototype (Figma)",

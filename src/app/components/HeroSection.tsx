@@ -138,7 +138,7 @@ export function HeroSection() {
             View Work
           </motion.button>
           <motion.a
-            href="https://drive.google.com/file/d/1kRXe4zfhYLTGknFv78ky4cGR-dPMgloz/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wUBBRWKKRXbSQO4lxn_-IAh9YUpZ58Zy/view?usp=sharing"
             target="_blank" rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
             style={{ border: `1px solid rgba(28,26,23,0.18)`, color: MUTED, padding: "0.75rem 1.875rem", borderRadius: "9999px", fontSize: "0.8125rem", fontWeight: 400, textDecoration: "none", fontFamily: SANS, letterSpacing: "0.02em" }}

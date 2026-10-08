@@ -15,7 +15,7 @@ const socials = [
     icon: Linkedin,
     label: "LinkedIn",
     sub: "Connect with me",
-    href: "https://www.linkedin.com/in/anshika-agrawal-work/",
+    href: "https://www.linkedin.com/in/anshika-agrawal-b473a521b/",
   },
   {
     icon: Github,
@@ -27,7 +27,7 @@ const socials = [
     icon: FileText,
     label: "Resume",
     sub: "Download PDF",
-    href: "https://drive.google.com/file/d/1kRXe4zfhYLTGknFv78ky4cGR-dPMgloz/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1wUBBRWKKRXbSQO4lxn_-IAh9YUpZ58Zy/view?usp=sharing",
     download: true,
   },
 ];
