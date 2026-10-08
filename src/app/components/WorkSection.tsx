@@ -6,14 +6,12 @@ import magicPinCover from "../../imports/MagicGrab.png";
 import magicGrabUserFlow from "../../imports/MagicGrab_User Flow.png";
 import magicGrabNotification from "../../imports/MagicGrab_Notification.png";
 import magicGrabInviteFriends from "../../imports/MagicGrab_Invite Friends.png";
-import magicGrabHome from "../../imports/MagicGrab_Home.png";
 import magicGrabCreateGroup from "../../imports/MagicGrab_Create Group - Duo.png";
-import magicGrabCheckoutSuccess from "../../imports/MagicGrab_Checkout - Group Success.png";
-import tutedudeHomepage from "../../imports/Tutedude_Homepage.jpeg";
+import tutedudeCover from "../../imports/Tutedude.png";
 import tutedudeUserFlow from "../../imports/Tutedude_User Flow_diagram.jpeg";
 import tutedudeCourseView from "../../imports/Tutedude_Course_View.jpeg";
+import tutedudeCourseContent from "../../imports/Tutedude_Lecture - Course Content.png";
 import tutedudeProgress from "../../imports/Tutedude_course_progress.jpeg";
-import tutedudeCertificates from "../../imports/Tutedude_Certifications.jpeg";
 import workzaCover from "../../imports/Workza_HRMS_-_LOgin.jpeg";
 
 const SERIF = "'Cormorant Garamond', Georgia, serif";
@@ -292,7 +290,7 @@ const projects = [
     year: "2026",
     accent: "#57288C",
     accentBg: "#F2ECF8",
-    image: tutedudeHomepage,
+    image: tutedudeCover,
     driveLink:
       "https://drive.google.com/file/d/1Q4YeOkVn6-b-shet8GXiyL1Ti12G6i0p/view?usp=sharing" as
         | string
@@ -413,9 +411,7 @@ function MagicGrabDetails() {
   const screenshots = [
     { label: "Notification", image: magicGrabNotification },
     { label: "Invite friends", image: magicGrabInviteFriends },
-    { label: "Home", image: magicGrabHome },
     { label: "Create a Duo group", image: magicGrabCreateGroup },
-    { label: "Group order success", image: magicGrabCheckoutSuccess },
   ];
 
   return (
@@ -713,10 +709,9 @@ function TuteDudeDetails() {
     ],
   ];
   const screenshots = [
-    { label: "TuteDude homepage", image: tutedudeHomepage },
     { label: "Redesigned lecture page", image: tutedudeCourseView },
     { label: "Progress and watch-time screen", image: tutedudeProgress },
-    { label: "Certificate and refund screen", image: tutedudeCertificates },
+    { label: "Lecture — Course Content", image: tutedudeCourseContent },
   ];
 
   return (
