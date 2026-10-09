@@ -31,7 +31,7 @@ const screenshotGridStyle: CSSProperties = {
 const screenshotCardStyle: CSSProperties = {
   margin: 0,
   padding: "0.75rem",
-  background: "#fff",
+  background: p.id === 3 ? "transparent" : "#fff",
   border: `1px solid ${BORDER}`,
   borderRadius: "0.75rem",
 };
@@ -164,7 +164,7 @@ const projects = [
     title: "Workza",
     company: "Karpragati Technologies",
     platform: "Web App",
-    tags: ["B2B SaaS", "HR Tech", "Web"],
+    tags: ["Product Design", "Client & In-House", "Web & Mobile"],
     year: "2026",
     accent: "#1B4332",
     accentBg: "#EDF5F0",
@@ -172,28 +172,27 @@ const projects = [
     driveLink: null as string | null,
     resources: [] as { label: string; href: string }[],
     brief:
-      "Internal HRMS platform — attendance, payroll, onboarding, and team operations. Designed end-to-end from zero to shipped.",
+      "Designing client products and in-house platforms across HRMS, EV fleet management, and social creatives.",
     role: "Product Designer",
     duration: "Aug 2026 – Present",
     overview:
-      "Workza is a comprehensive HRMS platform for Karpragati Technologies' internal operations — attendance tracking, payroll flows, employee onboarding, and day-to-day HR workflows.",
+      "Karpragati Technologies is an IT solutions and services company that designs and builds applications around client needs, while also developing its own products. I work across client projects and internal product revamps, including Workza, an HRMS for blue-collar and white-collar staff, and Aameego, an EV and fleet management application for riders and service teams.",
     problem:
-      "The team managed HR operations across disconnected spreadsheets and WhatsApp messages — no single source of truth, payroll errors, delays in onboarding.",
-    // context: "B2B · Internal Product · Web · HR Technology",
+      "Client projects each bring different users, needs, and goals. The in-house products serve equally varied audiences: Workza must be approachable for employees while offering HR and managers the depth they need, and Aameego has to surface clear, timely information for people on the move.",
+    // context: "Client and in-house products · Web and mobile",
     myRole:
-      "Led the full design lifecycle — stakeholder discovery through annotated Figma handoff. Sole designer on the product track.",
+      "Own the design process end to end, from research and thinking documents through user flows and final interfaces. I design client projects before development, hand work over to developers and stay involved through the build, lead revamps of Workza and Aameego, and create social creatives for the company.",
     contributions: [
-      "2-week discovery sprint with internal stakeholders before any wireframes",
-      "Mapped all HR workflows: attendance, payroll, leave, onboarding, offboarding",
-      "Designed 40+ connected screens with edge cases and empty states",
-      "Reduced onboarding form complexity through progressive disclosure",
-      "Delivered annotated specs with interaction notes into the dev pipeline",
+      "Research client and product needs, then document the goals and design direction before screens.",
+      "Map user flows, create wireframes, and develop high-fidelity UI for web and mobile experiences.",
+      "Design distinct experiences for different roles, including employees, HR teams, managers, riders, and service teams.",
+      "Hand designs over to developers and stay involved to help the delivered product match the design.",
+      "Lead revamps of in-house products Workza and Aameego, and create creatives for company social channels.",
     ],
     processNote:
-      "Discovery → Information architecture → User flows → Lo-fi wireframes → Hi-fi UI → Handoff specs",
+      "Research and thinking documents → User flows → Wireframes → High-fidelity UI → Developer handoff and build support",
     learnings:
-      "Internal tools are harder to design than consumer products because the edge cases are real, users are captive, and bad decisions have nowhere to hide.",
-    screenRatio: "16/9",
+      "One product can serve very different users, so each role needs its own experience. Working across client projects and in-house products means switching between tailored design and a shared system. Good handoff decisions matter as much as good screens.",
   },
   {
     id: 2,
@@ -246,10 +245,10 @@ const projects = [
   {
     id: 3,
     num: "03",
-    title: "Workforce Operating System",
+    title: "AVYRO",
     company: "AVYRO",
     platform: "Web App",
-    tags: ["B2B", "Industrial SaaS", "Web"],
+    tags: ["B2B SaaS", "AEC", "Web"],
     year: "2025–26",
     accent: "#5A5550",
     accentBg: "#F2F0EC",
@@ -257,28 +256,27 @@ const projects = [
     driveLink: null as string | null,
     resources: [],
     brief:
-      "B2B SaaS for industrial companies to digitise field workforce management — task assignment, shift scheduling, compliance workflows. Sole designer for a full year.",
+      "An AI-native operating system connecting CRM, proposals, resourcing, timesheets, billing, and analytics for AEC firms.",
     role: "Product UI Designer",
     duration: "May 2025 – May 2026",
     overview:
-      "A B2B platform helping industrial companies digitise and manage their field workforce — task assignment, shift scheduling, compliance documentation, and reporting across complex org structures.",
+      "Avyro is an AI-native operating system for architecture, engineering, and construction firms. It brings CRM, proposals, resourcing, timesheets, billing, and analytics into one connected platform, designed from scratch.",
     problem:
-      "Industrial companies were managing field teams through paper logs, phone calls, and fragmented Excel sheets — zero real-time visibility into task status, shift coverage, or compliance gaps.",
+      "Team members, supervisors, managers, and leadership all use the product, often in messy day-to-day conditions. Routine work took too much manual effort, managers lacked a clear view of project assignments and time spent, and inconsistent screens risked making a large platform hard to learn and adopt.",
     // context: "B2B · Industrial Workforce · Web · SaaS",
     myRole:
-      "Product UI designer for 12 months across the full product lifecycle — from initial research through to shipped features.",
+      "Led end-to-end UI/UX design from user flows and wireframes to high-fidelity UI. Owned the design system and worked closely with developers and stakeholders, designing in Figma for both team members and managers.",
     contributions: [
-      "Owned the full design lifecycle — research, wireframes, UI, specfications, BRD documentation",
-      "Worked directly with engineering leads and product managers across multiple sprints",
-      "Designed complex data-heavy workflows for non-technical field managers",
-      "Created a scalable design system from scratch to support rapid feature development",
-      "Delivered SRS documentation and annotated handoffs into the engineering pipeline",
+      "Built a shared design system from scratch, defining reusable components, states, spacing, and typography.",
+      "Mapped connected workflows before wireframing, then translated them into clear, consistent high-fidelity screens.",
+      "Designed for team members logging work, managers running teams, and leadership tracking progress and time.",
+      "Made routine work easier to review and correct, while keeping automated actions visible and user-controlled.",
+      "Reviewed designs with developers early and made practical, buildable decisions throughout handoff.",
     ],
     processNote:
-      "Stakeholder research → Systems mapping → Information architecture → Wireframes → Hi-fi UI → SRS + handoff",
+      "Stakeholder discovery → User flows → Wireframes → High-fidelity UI → Developer review and handoff",
     learnings:
-      "B2B industrial products demand ruthless simplicity for complex workflows. Non-technical users don't read UI — they pattern-match. Every screen must communicate its purpose in under two seconds.",
-    screenRatio: "16/9",
+      "In B2B products, speed, clarity, and trust often matter more than adding features. Automation works when people understand and control it, and a design system pays off most when users work in messy, real conditions.",
   },
   {
     id: 4,
@@ -897,6 +895,352 @@ function TuteDudeDetails() {
   );
 }
 
+function WorkzaDetails() {
+  const sectionStyle = {
+    marginBottom: "2.5rem",
+    borderTop: `1px solid ${BORDER}`,
+    paddingTop: "2rem",
+  };
+  const headingStyle = {
+    fontSize: "0.6rem",
+    color: DIM,
+    fontFamily: SANS,
+    fontWeight: 500,
+    letterSpacing: "0.18em",
+    textTransform: "uppercase" as const,
+    margin: "0 0 1rem",
+  };
+  const bodyStyle = {
+    fontFamily: SANS,
+    fontSize: "0.84rem",
+    color: MUTED,
+    lineHeight: 1.8,
+    margin: 0,
+    fontWeight: 300,
+  };
+  const productAreas = [
+    [
+      "Client projects",
+      "Each client brings different users, needs, and goals.",
+      "Start from the brief and tailor the research, flows, and interface to the client's needs.",
+    ],
+    [
+      "Workza",
+      "HR teams need broad operational coverage, while employees need everyday tasks to stay simple.",
+      "Design role-appropriate experiences across attendance, leave, HR data, onboarding and offboarding, payroll, reports and analytics, and document management.",
+    ],
+    [
+      "Aameego",
+      "Riders and fleet or service teams need clear information while on the move.",
+      "Revamp the EV and fleet management application around the needs of its riders and service teams.",
+    ],
+    [
+      "Social creatives",
+      "Product and company communications need a consistent brand presence.",
+      "Create creatives for the company's social handles, keeping them aligned with the brand.",
+    ],
+  ];
+
+  return (
+    <>
+      <section style={sectionStyle}>
+        <p style={headingStyle}>About Karpragati Technologies</p>
+        <p style={bodyStyle}>
+          Karpragati Technologies is an IT solutions and services company that
+          designs and builds applications around its clients' needs. Alongside
+          client work, it develops in-house products including Workza and
+          Aameego.
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Products &amp; Design Challenges</p>
+        <div style={{ overflowX: "auto" }}>
+          <table
+            style={{
+              width: "100%",
+              borderCollapse: "collapse",
+              fontFamily: SANS,
+              fontSize: "0.78rem",
+              color: MUTED,
+              textAlign: "left",
+            }}
+          >
+            <thead>
+              <tr>
+                {["Area", "Challenge", "Design focus"].map((label) => (
+                  <th
+                    key={label}
+                    style={{
+                      padding: "0.7rem",
+                      borderBottom: `1px solid ${BORDER}`,
+                      color: TEXT,
+                      fontWeight: 500,
+                    }}
+                  >
+                    {label}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {productAreas.map(([area, challenge, focus]) => (
+                <tr key={area}>
+                  {[area, challenge, focus].map((text, index) => (
+                    <td
+                      key={index}
+                      style={{
+                        padding: "0.7rem",
+                        borderBottom: `1px solid ${BORDER}`,
+                        verticalAlign: "top",
+                        lineHeight: 1.65,
+                        minWidth: index === 0 ? 120 : 190,
+                        color: index === 0 ? TEXT : MUTED,
+                      }}
+                    >
+                      {text}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Design Process</p>
+        <p style={bodyStyle}>
+          Research and thinking documents → User flows → Wireframes →
+          High-fidelity UI → Developer handoff and build support
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Guiding Principles</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>Keep experiences simple and clear for every role.</li>
+          <li>Reduce the steps needed for everyday tasks.</li>
+          <li>Use consistent patterns across features.</li>
+          <li>Design around each client's real needs, not a fixed template.</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Key Trade-off</p>
+        <p style={bodyStyle}>
+          Workza serves users with very different needs. I favour simplicity
+          for employees, while providing the depth HR teams and managers need
+          to handle broader workflows.
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Learnings</p>
+        <blockquote
+          style={{
+            fontFamily: SERIF,
+            fontSize: "clamp(1.1rem, 2vw, 1.45rem)",
+            fontStyle: "italic",
+            color: TEXT,
+            lineHeight: 1.55,
+            margin: 0,
+            borderLeft: `3px solid ${"#1B4332"}40`,
+            paddingLeft: "1.125rem",
+            fontWeight: 500,
+          }}
+        >
+          One product can serve very different users, so each role needs its own
+          experience. Working across client projects and in-house products
+          means switching between tailored design and a shared system. Good
+          handoff decisions matter as much as good screens.
+        </blockquote>
+      </section>
+    </>
+  );
+}
+
+function AvyroDetails() {
+  const sectionStyle = {
+    marginBottom: "2.5rem",
+    borderTop: `1px solid ${BORDER}`,
+    paddingTop: "2rem",
+  };
+  const headingStyle = {
+    fontSize: "0.6rem",
+    color: DIM,
+    fontFamily: SANS,
+    fontWeight: 500,
+    letterSpacing: "0.18em",
+    textTransform: "uppercase" as const,
+    margin: "0 0 1rem",
+  };
+  const bodyStyle = {
+    fontFamily: SANS,
+    fontSize: "0.84rem",
+    color: MUTED,
+    lineHeight: 1.8,
+    margin: 0,
+    fontWeight: 300,
+  };
+  const tableStyle = {
+    width: "100%",
+    borderCollapse: "collapse" as const,
+    fontFamily: SANS,
+    fontSize: "0.78rem",
+    color: MUTED,
+    textAlign: "left" as const,
+  };
+  const cellStyle = {
+    padding: "0.7rem",
+    borderBottom: `1px solid ${BORDER}`,
+    verticalAlign: "top" as const,
+    lineHeight: 1.65,
+  };
+  const areas = [
+    [
+      "Design system",
+      "No shared foundation; risk of inconsistent screens.",
+      "Built a shared foundation from scratch, with reusable components, states, spacing, and typography across modules.",
+    ],
+    [
+      "Flows & UI",
+      "Complex, connected workflows and dense B2B screens.",
+      "Mapped connected workflows first, then designed clean, consistent screens with clear states for dense B2B tasks.",
+    ],
+    [
+      "Reducing manual effort",
+      "Routine entry was slow and easy to get wrong.",
+      "Pre-filled routine work so users can review and correct instead of entering everything themselves.",
+    ],
+    [
+      "Trust in automation",
+      "Automatic tracking can feel unclear or intrusive.",
+      "Made system actions visible and kept users in control of what automation does.",
+    ],
+    [
+      "Team management",
+      "Hard to see who is working on which project.",
+      "Brought team members and their project assignments together so managers can see who is working where.",
+    ],
+    [
+      "Managerial dashboards",
+      "No clear view of time invested across projects and people.",
+      "Summarised time and effort by project and team to make allocation and progress easier to understand.",
+    ],
+    [
+      "Developer handoff",
+      "Gap between design and what gets built.",
+      "Reviewed designs with engineering early and made buildable decisions to narrow the gap between design and delivery.",
+    ],
+  ];
+
+  return (
+    <>
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Design Process</p>
+        <p style={bodyStyle}>
+          Stakeholder discovery → User flows → Wireframes → High-fidelity UI →
+          Developer review and handoff
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Guiding Principles</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>Clarity over cleverness: simple, consistent screens for every role.</li>
+          <li>
+            Reduce manual effort: let the product handle routine work, then let
+            users review and correct it.
+          </li>
+          <li>
+            Make automation feel safe: show clearly what the system does and
+            keep users in control.
+          </li>
+          <li>Design only what can actually be built.</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>What I Worked On</p>
+        <div style={{ overflowX: "auto" }}>
+          <table style={tableStyle}>
+            <thead>
+              <tr>
+                <th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>
+                  Area
+                </th>
+                <th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>
+                  Problem
+                </th>
+                <th style={{ ...cellStyle, color: TEXT, fontWeight: 500 }}>
+                  How it was resolved
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {areas.map(([area, problem, resolution]) => (
+                <tr key={area}>
+                  <td style={{ ...cellStyle, minWidth: 130, color: TEXT }}>
+                    {area}
+                  </td>
+                  <td style={{ ...cellStyle, minWidth: 180 }}>
+                    {problem}
+                  </td>
+                  <td style={{ ...cellStyle, minWidth: 230 }}>{resolution}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Key Trade-off</p>
+        <p style={bodyStyle}>
+          The balance was between a feature-rich platform and an interface
+          people can use quickly. I favoured clarity and consistency, keeping
+          each screen focused on the task at hand.
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Outcome</p>
+        <ul style={{ ...bodyStyle, paddingLeft: "1.25rem", margin: 0 }}>
+          <li>A consistent, reusable design system the team could build on.</li>
+          <li>Faster, more accurate everyday tasks for users.</li>
+          <li>
+            A clearer view of team allocation and time spent for managers.
+          </li>
+          <li>A more trusted experience from end to end.</li>
+        </ul>
+      </section>
+
+      <section style={sectionStyle}>
+        <p style={headingStyle}>Learnings</p>
+        <blockquote
+          style={{
+            fontFamily: SERIF,
+            fontSize: "clamp(1.1rem, 2vw, 1.45rem)",
+            fontStyle: "italic",
+            color: TEXT,
+            lineHeight: 1.55,
+            margin: 0,
+            borderLeft: `3px solid ${"#5A5550"}40`,
+            paddingLeft: "1.125rem",
+            fontWeight: 500,
+          }}
+        >
+          In B2B products, speed, clarity, and trust often matter more than
+          adding features. Automation only works when users understand and
+          control what it does, and a design system pays off most when people
+          work in messy, real conditions.
+        </blockquote>
+      </section>
+    </>
+  );
+}
+
 function CaseStudy({
   p,
   onClose,
@@ -999,32 +1343,33 @@ function CaseStudy({
         </div>
 
         <div style={{ padding: "2.5rem 1.75rem 5rem", flex: 1 }}>
-          {/* Hero image */}
-          <div
-            style={{
-              borderRadius: "0.875rem",
-              marginBottom: "2.5rem",
-              width: "100%",
-              background: "#fff",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <CaseStudyImage
-              src={p.image}
-              alt={p.title}
+          {p.image && p.id !== 1 && (
+            <div
               style={{
-                display: "block",
-                maxWidth: "100%",
-                maxHeight: "70vh",
-                width: "auto",
-                height: "auto",
-                objectFit: "contain",
                 borderRadius: "0.875rem",
+                marginBottom: "2.5rem",
+                width: "100%",
+                background: "#fff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
-            />
-          </div>
+            >
+              <CaseStudyImage
+                src={p.image}
+                alt={p.title}
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  maxHeight: p.id === 3 ? "none" : "70vh",
+                  width: p.id === 3 ? "100%" : "auto",
+                  height: "auto",
+                  objectFit: "contain",
+                  borderRadius: "0.875rem",
+                }}
+              />
+            </div>
+          )}
 
           {/* Title block */}
           <div
@@ -1071,7 +1416,11 @@ function CaseStudy({
                 lineHeight: 1.1,
               }}
             >
-              {p.title}
+              {p.id === 1
+                ? "Designing Client and In-House Products"
+                : p.id === 3
+                  ? "Avyro: B2B SaaS Platform"
+                  : p.title}
             </h2>
             <p
               style={{
@@ -1084,7 +1433,7 @@ function CaseStudy({
               }}
             >
               {p.id === 2 ? (
-                "magicpin Design Challenge · Self-initiated · 2026"
+                "Magicpin Design Challenge · Self-initiated · 2026"
               ) : p.id === 4 ? (
                 <>
                   Self-initiated project · Mobile Web · 360px screen
@@ -1275,7 +1624,7 @@ function CaseStudy({
                   margin: "0 0 1.25rem",
                 }}
               >
-                Work Samples
+                {p.id === 1 || p.id === 3 ? "Get in touch" : "Work Samples"}
               </p>
               <div
                 style={{
@@ -1296,7 +1645,9 @@ function CaseStudy({
                     fontWeight: 500,
                   }}
                 >
-                  Full screens available on request.
+                  {p.id === 1 || p.id === 3
+                    ? "Want to explore the work in more detail?"
+                    : "Full screens available on request."}
                 </p>
                 <p
                   style={{
@@ -1308,11 +1659,20 @@ function CaseStudy({
                     lineHeight: 1.72,
                   }}
                 >
-                  I'm happy to walk you through the complete product — flows,
-                  components, and the decisions behind them — in a conversation.
+                  {p.id === 1
+                    ? "Get in touch and I’d be happy to share more about the client projects, in-house products, and design decisions."
+                    : p.id === 3
+                      ? "Get in touch and I’d be happy to share more about the workflows, design system, and decisions behind Avyro."
+                      : "I'm happy to walk you through the complete product — flows, components, and the decisions behind them — in a conversation."}
                 </p>
                 <a
-                  href="mailto:anshikaagrawalwork08@gmail.com?subject=Viewing case study — please share"
+                  href={
+                    p.id === 1
+                      ? "mailto:anshikaagrawalwork08@gmail.com?subject=Karpragati%20case%20study"
+                      : p.id === 3
+                        ? "mailto:anshikaagrawalwork08@gmail.com?subject=Avyro%20case%20study"
+                        : "mailto:anshikaagrawalwork08@gmail.com?subject=Viewing%20case%20study%20—%20please%20share"
+                  }
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
@@ -1445,7 +1805,12 @@ function CaseStudy({
               </div>
             </div>
           )}
-          {hasDriveLink &&
+          {p.id === 1 ? (
+            <WorkzaDetails />
+          ) : p.id === 3 ? (
+            <AvyroDetails />
+          ) : (
+            hasDriveLink &&
             (p.id === 2 ? (
               <MagicGrabDetails />
             ) : p.id === 4 ? (
@@ -1588,7 +1953,8 @@ function CaseStudy({
                   </div>
                 )}
               </>
-            ))}
+            ))
+          )}
         </div>
       </motion.div>
 
@@ -1628,7 +1994,7 @@ function ProjectCard({
         cursor: "pointer",
         height: "100%",
         border: `1px solid rgba(28,26,23,0.12)`,
-        background: "#1A1916",
+        background: p.image ? "#1A1916" : p.accent,
         transition: "box-shadow 0.35s, transform 0.35s",
         boxShadow: hovered
           ? "0 12px 40px rgba(28,26,23,0.18)"
@@ -1636,28 +2002,32 @@ function ProjectCard({
         transform: hovered ? "translateY(-2px)" : "translateY(0)",
       }}
     >
-      <img
-        src={p.image}
-        alt={p.title}
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          transition: "transform 0.85s ease, opacity 0.4s",
-          transform: hovered ? "scale(1.05)" : "scale(1)",
-          opacity: hovered ? 0.95 : 0.82,
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background:
-            "linear-gradient(to top, rgba(20,18,15,0.88) 0%, rgba(20,18,15,0.35) 38%, rgba(20,18,15,0.08) 65%, transparent 100%)",
-        }}
-      />
+      {p.image && (
+        <>
+          <img
+            src={p.image}
+            alt={p.title}
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              transition: "transform 0.85s ease, opacity 0.4s",
+              transform: hovered ? "scale(1.05)" : "scale(1)",
+              opacity: hovered ? 0.95 : 0.82,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(to top, rgba(20,18,15,0.88) 0%, rgba(20,18,15,0.35) 38%, rgba(20,18,15,0.08) 65%, transparent 100%)",
+            }}
+          />
+        </>
+      )}
 
       {/* Platform badge */}
       <div style={{ position: "absolute", top: "1.125rem", left: "1.125rem" }}>
