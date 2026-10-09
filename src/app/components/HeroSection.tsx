@@ -114,7 +114,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.84, ease }}
           style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", justifyContent: "center", marginBottom: "2.5rem" }}
         >
-          {["HR Tech", "EV & Mobility", "Industrial SaaS", "Fintech", "Healthcare", "Legal Tech", "Travel", "Hyperlocal", "E-commerce"].map((d, i) => (
+          {["Industrial SaaS", "HR Tech", "EV & Logistics", "Healthcare", "EdTech", "E-commerce"].map((d, i) => (
             <motion.span
               key={d}
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.88 + i * 0.035 }}
