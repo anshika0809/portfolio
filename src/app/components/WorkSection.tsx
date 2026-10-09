@@ -12,7 +12,7 @@ import tutedudeUserFlow from "../../imports/Tutedude_User Flow_diagram.jpeg";
 import tutedudeCourseView from "../../imports/Tutedude_Course_View.jpeg";
 import tutedudeCourseContent from "../../imports/Tutedude_Lecture - Course Content.png";
 import tutedudeProgress from "../../imports/Tutedude_course_progress.jpeg";
-import workzaCover from "../../imports/Workza_HRMS_-_LOgin.jpeg";
+import karpragatiCover from "../../imports/Karpragati_cover.jpeg";
 
 const SERIF = "'Cormorant Garamond', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
@@ -168,7 +168,7 @@ const projects = [
     year: "2026",
     accent: "#1B4332",
     accentBg: "#EDF5F0",
-    image: workzaCover,
+    image: karpragatiCover,
     driveLink: null as string | null,
     resources: [] as { label: string; href: string }[],
     brief:
