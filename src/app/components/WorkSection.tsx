@@ -163,7 +163,7 @@ const projects = [
     num: "01",
     title: "Workza",
     company: "Karpragati Technologies",
-    platform: "Web App",
+    platform: "Web/Mobile App",
     tags: ["Product Design", "Client & In-House", "Web & Mobile"],
     year: "2026",
     accent: "#1B4332",
