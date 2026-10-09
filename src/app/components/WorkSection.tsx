@@ -31,7 +31,7 @@ const screenshotGridStyle: CSSProperties = {
 const screenshotCardStyle: CSSProperties = {
   margin: 0,
   padding: "0.75rem",
-  background: p.id === 3 ? "transparent" : "#fff",
+  background: "#fff",
   border: `1px solid ${BORDER}`,
   borderRadius: "0.75rem",
 };
@@ -161,7 +161,7 @@ const projects = [
   {
     id: 1,
     num: "01",
-    title: "Workza",
+    title: "Kar Pragati",
     company: "Karpragati Technologies",
     platform: "Web/Mobile App",
     tags: ["Product Design", "Client & In-House", "Web & Mobile"],
@@ -1343,7 +1343,7 @@ function CaseStudy({
         </div>
 
         <div style={{ padding: "2.5rem 1.75rem 5rem", flex: 1 }}>
-          {p.image && p.id !== 1 && (
+          {p.image && (
             <div
               style={{
                 borderRadius: "0.875rem",
@@ -1417,7 +1417,7 @@ function CaseStudy({
               }}
             >
               {p.id === 1
-                ? "Designing Client and In-House Products"
+                ? "End-to-End Product Design"
                 : p.id === 3
                   ? "Avyro: B2B SaaS Platform"
                   : p.title}
